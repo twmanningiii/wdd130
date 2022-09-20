@@ -1,3 +1,7 @@
 body {
     text-align: center;
   }
+  nav {
+    background-color: steelblue;
+    padding: 10px;
+  }
