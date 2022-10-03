@@ -1,0 +1,29 @@
+:root { 
+    --primary-color: rgb(#FFAFCC)
+
+
+}
+nav {
+    background-color: rgb(#ffafcc);
+    padding: 10px;}
+    h1 {
+        color: rgb(white);
+      }
+    p {color: rgb(white)
+    }
+
+  h1 {
+    text-align: center;
+  }
+  nav, footer {
+    text-align: center;
+  }
+  footer p {
+    font-size: 20px;
+    margin: 20px auto;
+  }
+  a:hover {
+    background-color: rgb(white);
+    color: steelblue;
+  }
+   
