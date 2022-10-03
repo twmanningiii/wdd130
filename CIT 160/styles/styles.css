@@ -2,6 +2,7 @@
     --primary-color: rgb(#ffafcc)
     --secondary-color: rgb(white)
 
+    --headline-color-on-color: rgb(white)
 }
 nav {
     background-color: rgb(#ffafcc); 
