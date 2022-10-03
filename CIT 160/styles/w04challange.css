@@ -1,29 +1,30 @@
 :root { 
-    --primary-color: rgb(#FFAFCC)
-
+    --primary-color: rgb(#ffafcc)
+    --secondary-color: rgb(white)
 
 }
 nav {
-    background-color: rgb(#ffafcc);
+    background-color: rgb(#ffafcc); 
     padding: 10px;}
-    h1 {
-        color: rgb(white);
+h1 {color: rgb(white);
       }
-    p {color: rgb(white)
+p {color: rgb(white)
     }
-
-  h1 {
+h1 {
     text-align: center;
   }
-  nav, footer {
-    text-align: center;
-  }
-  footer p {
+footer p {
     font-size: 20px;
     margin: 20px auto;
+    text-align: center;
   }
-  a:hover {
+a:hover {
     background-color: rgb(white);
-    color: steelblue;
+    color: black;
+  }
+  img {
+    width: 20%;
+    display: block;
+    margin: 0 auto;
   }
    
