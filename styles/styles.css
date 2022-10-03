@@ -1,6 +1,4 @@
-body {
-    text-align: center;
-  }
+
   nav {
     background-color: steelblue;
     padding: 10px;
@@ -14,6 +12,8 @@ body {
   }
   img {
     width: 80%;
+    display: block;
+    margin: 0 auto;
     border: 4px solid steelblue;
   }
   p {
@@ -33,4 +33,20 @@ body {
 }
 p {
   width: 80%;
+  margin: 50px auto;
+  text-align: center;
+}
+h1 {
+  text-align: center;
+}
+nav, footer {
+  text-align: center;
+}
+footer p {
+  font-size: 20px;
+  margin: 20px auto;
+}
+a:hover {
+  background-color: white;
+  color: steelblue;
 }
