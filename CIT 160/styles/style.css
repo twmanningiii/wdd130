@@ -1,22 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Roboto&family=Rock+Salt&display=swap');
-
-:root { 
-    --primary-color: rgb(FFAFCC)
-    --secondary-color: rgb(FFFFFF)
-    --headline-color-on-color: rgb(FFFFFF)
-}
-nav {
-  background-color: rgb(#ffafcc); 
+body {
+  background-color: var(#FFAFCC); 
 }
 
-h1 {color: rgb(255, 255, 255); 
+h1 {color: var(white); 
   text-align: center;
 }
 
 p {
   color: white;
   text-align: center;
-  margin: 40 auto;
+  margin: auto;
 }
 div.container {
   text-align: center;
@@ -28,7 +21,7 @@ ul.myUL {
 p2 {
   color: black;
   text-align: center;
-  margin: 40 auto;
+  margin: auto;
 }
 ul {list-style-position: inside;
 }
@@ -40,7 +33,7 @@ h2 {color: white;
   width: 10%;
 }
 h1:hover { 
-  background-color: rgb(white);
+  background-color: var(white);
   color: black;
   }
   
