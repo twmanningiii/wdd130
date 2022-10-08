@@ -1,31 +1,54 @@
-:root { 
-    --primary-color: rgb(#ffafcc)
-    --secondary-color: rgb(white)
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Roboto&family=Rock+Salt&display=swap');
 
-    --headline-color-on-color: rgb(white)
+:root { 
+    --primary-color: rgb(FFAFCC)
+    --secondary-color: rgb(FFFFFF)
+    --headline-color-on-color: rgb(FFFFFF)
 }
 nav {
-    background-color: rgb(#ffafcc); 
-    padding: 10px;}
-h1 {color: rgb(white);
-      }
-p {color: rgb(white)
-    }
-h1 {
-    text-align: center;
+  background-color: rgb(#ffafcc); 
+}
+
+h1 {color: rgb(255, 255, 255); 
+  text-align: center;
+}
+
+p {
+  color: white;
+  text-align: center;
+  margin: 40 auto;
+}
+div.container {
+  text-align: center;
+}
+ul.myUL {
+  display: inline-block;
+  text-align: left;
+}
+p2 {
+  color: black;
+  text-align: center;
+  margin: 40 auto;
+}
+ul {list-style-position: inside;
+}
+
+h2 {color: white; 
+  text-align: center;
+  margin: 10px auto;
+  display: block;
+  width: 10%;
+}
+h1:hover { 
+  background-color: rgb(white);
+  color: black;
   }
-footer p {
-    font-size: 20px;
-    margin: 20px auto;
-    text-align: center;
+  
+img {
+  width: 10%;
+  display: block;
+  margin: 0 auto;
   }
-a:hover {
-    background-color: rgb(white);
-    color: black;
-  }
-  img {
-    width: 20%;
-    display: block;
-    margin: 0 auto;
-  }
-   
+
+  
+  
