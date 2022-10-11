@@ -23,7 +23,7 @@ div.container {
   font-weight: bold;
 }
 
-ul.myUL {
+ol.myOL {
   display: inline-block;
   text-align: left;
 }
