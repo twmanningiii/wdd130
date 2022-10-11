@@ -1,47 +1,54 @@
-body {
-  background-color: var(#FFAFCC); 
-}
-
-h1 {color: var(white); 
-  text-align: center;
-}
-
-p {
+h1 {
   color: white;
   text-align: center;
-  margin: auto;
 }
+
+body {
+  background-color: #FFAFCC;
+}
+
+h1:hover {
+  color: black;
+}
+
+main p {
+  color: white;
+  text-align: center;
+  margin: 10px auto;
+  width: 30%;
+}
+
 div.container {
   text-align: center;
+  font-weight: bold;
 }
+
 ul.myUL {
   display: inline-block;
   text-align: left;
 }
-p2 {
-  color: black;
-  text-align: center;
-  margin: auto;
-}
-ul {list-style-position: inside;
+
+.ul {
+  list-style-position: inside;
+
 }
 
-h2 {color: white; 
+.p2 {
+  color: black;
   text-align: center;
   margin: 10px auto;
-  display: block;
-  width: 10%;
+  width: 20%;
+ }
+
+h2 {
+  color: white;
+  text-align: center;
+  margin: 10px auto;
+  width: 20%;
 }
-h1:hover { 
-  background-color: var(white);
-  color: black;
-  }
-  
+
 img {
   width: 10%;
   display: block;
   margin: 0 auto;
-  }
-
-  
-  
+}
