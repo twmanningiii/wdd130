@@ -6,13 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quarts to Liters</title>
     <script>
-
-        
+        function quartstoliters() {
+            let text = document.getElementById('quartsInputBox').value;
+            let b = parseFloat(text);
+            let c = b * 0.9462;
+            document.getElementById('litersDiv').innerHTML = c;
+        }
     </script>
     
 </head>
 <body>
-  
+    Enter number of Quarts to convert Liters: <input type="text" id="quartsInputBox">
+        <button type="button" onclick="quartstoliters()">Convert</button> <br>
+        Number of Liters is:<output id="litersDiv"></output>
+        <div id="litersDiv"></div>
+    
 
     
 </body>
