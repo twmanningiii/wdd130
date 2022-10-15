@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miles per Gallon</title>
+    <script>
+        
+        function gasMileage() {
+            let text = document.getElementById('milageInputBox').value;
+            let b = parseFloat('mileageInputBox').value;
+            let c = parseFloat('gallonsInputBox').value;
+            let d = b/c;
+            document.getElementById('milespergallon').innerHTML = d;
+        }
+
+    </script>
+</head>
+<body>
+    Enter number of miles driven: <input type="text" id="mileageInputBox">
+    <br>
+    Enter number of gallons used: <input type="text" id="gallonsInputBox"> 
+    <br>
+    <button type="button" onclick="milespergallon()">Calculate</button> 
+    Number of miles per gallon:<output id="milespergallon"></output>
+        
+</body>
+</html>
