@@ -1,65 +1,104 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Roboto&family=Rock+Salt&display=swap');
+
 .home-title {
-    --heading-font: "Rock Salt";
+    font-family: 'Rock Salt', 'Noto Sans', sans-serif;
+    font-size: 2em;
+    margin-top: 10px;
 }
 
 body {
     background-color: #87ab8e;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 22px;
     max-width: 1600px;
     margin: 0 auto;
-    text-align: center;   
+    padding: 0;
+    text-align: center;
+
 }
+
 header {
-    background-color:#87ab8e;
+    background-color: #87ab8e;
 }
+
 .logo {
     width: 80px;
+    padding-top: 5px;
 }
+
 .icon {
     width: 80px;
+    padding-top: 10px;
 }
+
 nav a {
     color: black;
     background-color: #87ab8e;
     text-decoration: none;
+    padding: 35px;
 }
-nav a:hover{
+
+nav a:hover {
     color: red;
     background-color: #77908b;
 }
+
 .book {
     color: bisque;
     background-color: #77908b;
     text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
+
 .join {
     color: bisque;
     background-color: #87ab8e;
     text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
+
 .book:hover {
     color: red;
     background-color: #87ab8e;
 
 }
+
 .join:hover {
     color: red;
     background-color: #77908b;
 }
+
 .msg {
     color: black;
     background-color: #87ab8e;
+    line-height: 1.5em;
+    padding: 35px;
 
 }
+
 .msg h2 {
     color: black;
+    font-family: 'Rock Salt', 'Noto Sans', sans-serif;
 }
+
 .msg p {
     color: black;
+    font-family: 'Rock Salt', 'Noto Sans', sans-serif;
+    font-size: .8em;
+    padding-bottom: 15px;
+
 }
+
 footer a {
     color: black;
 }
+
 footer a:hover {
     color: red;
 }
@@ -69,23 +108,35 @@ footer {
     background-color: #87ab8e;
     text-decoration: none;
     font-size: 1.2em;
+    padding: 25px 50px;
+    margin-top: 200px;
 }
+
 footer p a:hover {
     text-decoration: underline;
-}    
+}
+
+.social img {
+    padding-top: 15px;
+}
+
 #content {
 
     margin: 0 auto;
 }
+
 #hero-img {
     width: 100%;
 }
+
 #hero-msg h1 {
     text-align: center;
-} 
+}
 
 #hero-msg h4 {
     text-align: center;
+    font-family: 'Rock Salt', 'Noto Sans', sans-serif;
+    font-size: 2em;
 }
 
 .button-box {
@@ -94,9 +145,30 @@ footer p a:hover {
 
 main section {
     text-align: center;
+    box-sizing: border-box;
 }
 
 #background {
     height: 725px;
 
+}
+
+h2 {
+    margin: 0;
+}
+
+.rivers-card{
+    margin: 200px 0;
+}
+
+.camping-card{
+    margin: 200px 0;
+}
+
+.rapids-card{
+    margin: 200px 0;
+}
+ 
+.card-img{
+    border: 10px solid #d9c2a3;
 }
