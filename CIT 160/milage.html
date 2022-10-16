@@ -9,9 +9,9 @@
         
         function gasMileage() {
             let text = document.getElementById('milageInputBox').value;
-            let b = parseFloat('mileageInputBox').value;
-            let c = parseFloat('gallonsInputBox').value;
-            let d = b/c;
+            let b = parseFloat(document.getElementById('mileageInputBox').value);
+            let c = parseFloat(document.getElementById('gallonsInputBox').value);
+            let d = b / c;
             document.getElementById('milespergallon').innerHTML = d;
         }
 
