@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>Volume of a Torus</title>
+<script>
+
+// Your JavaScript function belongs here.
+    
+    function volumeofTorus(){
+        let a = parseFloat(document.getElementById("inner").value);
+        let b = parseFloat(document.getElementById("outer").value);
+        let v = ((3.1415 * 3.1415) * (a + b)) * ((a - b) * (a - b)) / 4;
+            document.getElementById("volume").innerHTML = v;
+    }
+</script>
+</head>
+
+<body>
+    <h1>Volume of a Torus</h1>
+    Inner radius <input type="text" id="inner"><br>
+    Outer radius <input type="text" id="outer"><br>
+    <button type="button" onclick="computeVolume()">Volume</button><br>
+    Volume <div id="volume"></div>
+</body>
+</html>
