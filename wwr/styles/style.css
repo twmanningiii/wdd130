@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Roboto&family=Rock+Salt&display=swap');
+.home-title {
+    --heading-font: "Rock Salt";
+}
+
 body {
     background-color: #87ab8e;
     max-width: 1600px;
