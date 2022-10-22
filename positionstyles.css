@@ -6,76 +6,89 @@
   grid-template-columns: 1fr 1fr;
   justify-items: center;
   grid-gap: 20px;
- 
+
 
 }
-.red1 { 
-   width: 100%; 
-  height: 100px; 
-  background-color: red; 
-  grid-column: 1/3;
- 
 
-} 
+.red1 {
+  width: 100%;
+  height: 100px;
+  background-color: red;
+  grid-column: 1/3;
+
+
+}
+
 .green1 {
-  width: 200px; 
-  height: 200px; 
-  background-color: green; 
- 
+  width: 200px;
+  height: 200px;
+  background-color: green;
 
-} 
+
+}
+
 .yellow1 {
-  width: 200px; 
-  height: 200px; 
+  width: 200px;
+  height: 200px;
   background-color: gold;
- 
-} 
-.blue1 {  
-  width: 100%; 
-  height: 100px; 
-  background-color: blue; 
+
+}
+
+.blue1 {
+  width: 100%;
+  height: 100px;
+  background-color: blue;
   grid-column: 1/3;
-} 
-/* Activity 2 styles */ 
+}
+
+/* Activity 2 styles */
 .content2 {
   /* This is the parent of the activity 2 boxes. */
   display: grid;
   grid-auto-rows: 100px;
   grid-auto-columns: 100px;
-  grid-template-areas: 
-  'red2 red2 red2 red2'
-  'green2 green2 green2 green2'
-  'yellow2 yellow2 yellow2 yellow2'
-  'blue2 blue2 blue2 blue2'
+  grid-template-areas:
+    'red2 red2 red2 red2'
+    'green2 green2 green2 green2'
+    'yellow2 yellow2 yellow2 yellow2'
+    'blue2 blue2 blue2 blue2'
 }
+
 .red2 {
-  width: 100px; 
-  height: 100px; 
-  background-color: red; 
-  
-} 
-.green2 { 
-  width: 100px; 
-  height: 100px; 
-  background-color: green; 
-  grid-column: 2; grid-row: 2;
+  width: 100px;
+  height: 100px;
+  background-color: red;
+
+}
+
+.green2 {
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  grid-column: 2;
+  grid-row: 2;
   margin: -50px;
-} 
+}
+
 .yellow2 {
-  width: 100px; 
-  height: 100px; 
-  background-color: gold; 
-  grid-column: 3; grid-row: 3;
+  width: 100px;
+  height: 100px;
+  background-color: gold;
+  grid-column: 3;
+  grid-row: 3;
   margin: -100px;
-} 
+}
+
 .blue2 {
-  width: 100px; 
-  height: 100px; 
-  background-color: blue; 
-  grid-column: 4; grid-row: 4;
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  grid-column: 4;
+  grid-row: 4;
   margin: -150px;
-} 
-/* Activity 3 styles */ 
+}
+
+/* Activity 3 styles */
 .content3 {
   /* This is the parent of the activity 3 boxes. */
   display: grid;
@@ -84,172 +97,191 @@
   grid-column-gap: 0;
 
 }
+
 .red3 {
-  width: 100%; 
-  height: 100px; 
-  background-color: red; 
+  width: 100%;
+  height: 100px;
+  background-color: red;
   grid-column: 1/4;
-} 
+}
+
 .green3 {
-  width: auto; 
-  height: 200px; 
+  width: auto;
+  height: 200px;
   background-color: green;
   grid-column: 1;
   grid-row: 2;
-} 
+}
+
 .yellow3 {
-  width: auto; 
-  height: 200px; 
-  background-color: gold; 
+  width: auto;
+  height: 200px;
+  background-color: gold;
   grid-column: 3;
   grid-row: 2;
-} 
+}
+
 .blue3 {
   width: auto;
-  height: 100px; 
-  background-color: blue; 
+  height: 100px;
+  background-color: blue;
   grid-row: 3/3;
   grid-column: 1/4;
-} 
-/* Activity 4 styles */ 
+}
+
+/* Activity 4 styles */
 .content4 {
   /* This is the parent of the activity 4 boxes. */
   display: grid;
   grid-template-columns: 300px 300px;
   grid-template-rows: 1fr 1fr 1fr;
- 
+
 }
+
 .red4 {
-  width: auto; 
-  height: 400px; 
-  background-color: red; 
+  width: auto;
+  height: 400px;
+  background-color: red;
   grid-column: 1;
   grid-row: 1/4;
-} 
+}
+
 .green4 {
-  width: auto; 
-  height: auto; 
-  background-color: green; 
+  width: auto;
+  height: auto;
+  background-color: green;
   grid-column: 2;
   grid-row: 1;
 
-} 
+}
+
 .yellow4 {
-  width: auto; 
-  height: auto; 
-  background-color: gold; 
+  width: auto;
+  height: auto;
+  background-color: gold;
   grid-column: 2;
   grid-row: 2;
-} 
+}
+
 .blue4 {
-  width: auto; 
-  height: auto; 
-  background-color: blue; 
+  width: auto;
+  height: auto;
+  background-color: blue;
   grid-column: 2;
   grid-row: 3;
-} 
-/* Activity 5 styles */ 
+}
+
+/* Activity 5 styles */
 .content5 {
   /* This is the parent of the activity 5 boxes. */
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 220px 200px  1fr;
-  grid-template-areas: 
-  'red5'
-  'green5'
-  'yellow5'
-  'blue5'
+  grid-template-rows: 1fr 220px 200px 1fr;
+  grid-template-areas:
+    'red5'
+    'green5'
+    'yellow5'
+    'blue5'
 
 }
-.red5 { 
-  width: auto; 
-  height: 100px; 
-  background-color: red; 
+
+.red5 {
+  width: auto;
+  height: 100px;
+  background-color: red;
   grid-column: 1/3;
   grid-row: 1;
-} 
+}
+
 .green5 {
   grid-column: 1/3;
   grid-row: 2 / 3;
-  width: 100px; 
-  height: 100px; 
-  background-color: green; 
+  width: 100px;
+  height: 100px;
+  background-color: green;
   object-fit: cover;
   float: left;
   margin-bottom: 3px;
   margin-right: 3px;
   z-index: 1;
-} 
+}
+
 .yellow5 {
-  width: auto; 
-  height: auto; 
-  background-color: gold; 
+  width: auto;
+  height: auto;
+  background-color: gold;
   grid-column: 1/3;
   grid-row: 2;
-} 
+}
+
 .blue5 {
-  width: auto; 
-  height: 100px; 
-  background-color: blue; 
+  width: auto;
+  height: 100px;
+  background-color: blue;
   grid-column: 1/3;
   grid-row: 3;
-} 
-/* Activity 6 styles */ 
+}
+
+/* Activity 6 styles */
 .content6 {
   /* This is the parent of the activity 6 boxes. */
   display: grid;
   grid-template-columns: 100px, 100px, 100px;
   grid-template-rows: 300px, 300px, 300px;
 }
+
 .red6 {
-  width: 200px; 
-  height: 100px; 
-  background-color: red; 
-  grid-column:  1 / 2;
+  width: 200px;
+  height: 100px;
+  background-color: red;
+  grid-column: 1 / 2;
   grid-row: 1 / 2;
   z-index: -1;
-} 
+}
+
 .green6 {
-  width: 100px; 
-  height: 100px; 
-  background-color: green; 
+  width: 100px;
+  height: 100px;
+  background-color: green;
   grid-column: 1/ 2;
   grid-row: 1 / 2;
   z-index: 3;
   margin-top: 200px;
-   
-} 
+
+}
+
 .yellow6 {
-  width: 100px; 
-  height: 200px; 
-  background-color: gold; 
+  width: 100px;
+  height: 200px;
+  background-color: gold;
   grid-column: 1 / 2;
   grid-row: 1 / 2;
   z-index: 2;
   margin-top: 100px;
   margin-left: 200px;
-} 
+}
+
 .blue6 {
-  width: 200px; 
-  height: 200px; 
-  background-color: blue; 
-  grid-column:  1 / 2;
+  width: 200px;
+  height: 200px;
+  background-color: blue;
+  grid-column: 1 / 2;
   grid-row: 1 / 2;
   margin: 50px;
   z-index: 1.5;
-} 
+}
 
 
 /* Do not make any changes below here */
 .activity {
-  width: 70%; 
-  margin: 20px auto; 
-  font-family: Arial, sans-serif; 
-  border: 1px solid black; 
-  padding: 10px; 
-  clear:both; 
+  width: 70%;
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+  border: 1px solid black;
+  padding: 10px;
+  clear: both;
   overflow: auto;
-} 
+}
 
 .hint {
   border: 1px solid grey;
@@ -258,13 +290,16 @@
   position: relative;
   margin: 1em 0;
 }
+
 .hint h3 {
   margin: 0;
 }
+
 .hint:hover {
   background: #d0d0d0;
 }
-.hint > div {
+
+.hint>div {
   display: none;
 }
 
@@ -277,7 +312,7 @@
   cursor: pointer;
 }
 
-.hint input[type=checkbox]:checked ~ div {
+.hint input[type=checkbox]:checked~div {
   display: block;
 }
 
@@ -288,26 +323,32 @@
   right: 10px;
   top: -3px;
 }
-.hint i:before, .hint i:after {
+
+.hint i:before,
+.hint i:after {
   content: "";
   position: absolute;
   background-color: black;
   width: 3px;
   height: 9px;
 }
+
 .hint i:before {
   transform: translate(2px, 0) rotate(45deg);
 }
+
 .hint i:after {
   transform: translate(-2px, 0) rotate(-45deg);
 }
 
-.hint input[type=checkbox]:checked ~ i:before {
+.hint input[type=checkbox]:checked~i:before {
   transform: translate(-2px, 0) rotate(45deg);
 }
-.hint input[type=checkbox]:checked ~ i:after {
+
+.hint input[type=checkbox]:checked~i:after {
   transform: translate(2px, 0) rotate(-45deg);
 }
+
 .hint a {
   position: relative;
   z-index: 1;
