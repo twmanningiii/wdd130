@@ -13,30 +13,34 @@
             //The type of footwear will be output.
             let theWeather = parseInt(document.getElementById('hot, rain, snow').value);
             let footWear = parseInt(document.getElementById('sandals, galoshes, boots, shoes').value);
-            }
-            var hot, rain, snow;
-            let sandals, galoshes, boots, shoes;
+        }
 
+        let footWear = ['sandals', 'galoshes', 'boots', 'shoes']
+        console.log(footWear);
+
+        function theWeather(hot, rain, snow) {
             if (hot == 'sandals') {
-                console.log('sandals');
+                return footWear[0];
             }
             else if (rain == 'galoshes') {
-                console.log('galoshes');
+                return footWear[1]
             }
             else if (snow == 'boots') {
-                console.log('boots');
+                return footWear[2]
             }
             else
-                console.log('shoes');
+                return footWear[3]
+                console.log(hot)
+        }    
     </script>
-    
+
 </head>
 
 <body>
     Enter type of weather today: <input type="text" id="theWeatherInputBox">
-        <button type="button" onclick="footWear"()>Footwear</button> <br>
-        Footwear type:<output id="footWear"></output>
-        <div id="footWearDiv"></div>
+    <button type="button" onclick=footWear()>Footwear</button> <br>
+    Footwear type:<output id="footWear"></output>
+    <div id="footWearDiv"></div>
 
 </body>
 
