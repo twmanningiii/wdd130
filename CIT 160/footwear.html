@@ -13,25 +13,25 @@
             //The type of footwear will be output.
             let theWeather = parseInt(document.getElementById('hot, rain, snow').value);
             let footWear = parseInt(document.getElementById('sandals, galoshes, boots, shoes').value);
-        }
-
-        let footWear = ['sandals', 'galoshes', 'boots', 'shoes']
-        console.log(footWear);
-
+        
+        
         function theWeather(hot, rain, snow) {
-            if (hot == 'sandals') {
+
+            if (hot = 'sandals') {
                 return footWear[0];
             }
-            else if (rain == 'galoshes') {
+            else if (rain = 'galoshes') {
                 return footWear[1]
             }
-            else if (snow == 'boots') {
+            else if (snow = 'boots') {
                 return footWear[2]
             }
             else
                 return footWear[3]
                 console.log(hot)
-        }    
+        }  
+            document.getElementById('footWear').innerHTML = footWear;
+    }  
     </script>
 
 </head>
