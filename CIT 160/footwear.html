@@ -7,38 +7,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Foot Wear</title>
     <script>
-        function footWear() {
+        function whatToWear() {
             //Find the correct footwear based of the weather.
-            //The user will enter the type of weather, hot, rain, snow.
+            //The user will enter the type of weather, hot, rain, snow or anything else.
             //The type of footwear will be output.
-            let theWeather = parseInt(document.getElementById('hot, rain, snow').value);
-            let footWear = parseInt(document.getElementById('sandals, galoshes, boots, shoes').value);
-        
-        
-        function theWeather(hot, rain, snow) {
+                           
+        let text = document.getElementById('theWeather').value;
 
-            if (hot = 'sandals') {
-                return footWear[0];
+            if (text == 'hot') {
+                message = 'sandals';
             }
-            else if (rain = 'galoshes') {
-                return footWear[1]
+            else if (text == 'rain') {
+                message = 'galoshes';
             }
-            else if (snow = 'boots') {
-                return footWear[2]
+            else if (text == 'snow') {
+                message = 'boots';
             }
             else
-                return footWear[3]
-                console.log(hot)
-        }  
-            document.getElementById('footWear').innerHTML = footWear;
+               message = "shoes";
+                        
+            document.getElementById('footWearDiv').innerHTML = message;
     }  
     </script>
 
 </head>
 
 <body>
-    Enter type of weather today: <input type="text" id="theWeatherInputBox">
-    <button type="button" onclick=footWear()>Footwear</button> <br>
+    Enter type of weather today: <input type="text" id="theWeather">
+    <button type="button" onclick="whatToWear()">Footwear</button> <br>
     Footwear type:<output id="footWear"></output>
     <div id="footWearDiv"></div>
 
