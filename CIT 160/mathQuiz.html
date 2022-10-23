@@ -1,57 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Math Quize</title>
+    <title>Math Quiz</title>
     <script>
-        function mathQuize() {
-        //imput two numbers x and y an operator resulting in c.
-        //check results for accuracy and produce the phrase, 
-        //Value is 'Correct! Good Job.' if the answer is correct. 
-        //If incorrect, value is "Incorrect. Try again!"
-        let x = parseFloat(document.getElementById('xInputBox').value);
-        let operator = document.getElementById('operatorInputBox').value;
-        let y = parseFloat(document.getElementById('yInputBox').value);
-        let c = parseFloat(document.getElementById('cInputBox').value);
-        let result;
-        let correct;
-        if (operator == '+') {
-            result = x + y;
+        function mathQuiz() {
+            //Input two numbers x and y an operator resulting in c.
+            //check results for accuracy and produce the phrase, 
+            //Value is 'Correct! Good Job.' if the answer is correct. 
+            //If incorrect, value is "Incorrect. Try again!"
+            let x = parseFloat(document.getElementById('xInputBox').value);
+            let operator = document.getElementById('operatorInputBox').value;
+            let y = parseFloat(document.getElementById('yInputBox').value);
+            let c = parseFloat(document.getElementById('cInputBox').value);
+            let result;
+            let correct;
+            if (operator == '+') {
+                result = x + y;
+            }
+            else if (operator == '-') {
+                result = x - y;
+            }
+            else if (operator == '*') {
+                result = x * y;
+            }
+            else if (operator == '/') {
+                result = x / y;
+            }
+            if (result == c) {
+                corret = "Correct! Good Job.";
+            }
+            else {
+                correct = "Incorrect! Try again!";
+            }
+
+            document.getElementById('outputDiv').innerHTML = correct;
         }
-        else if (operator == '-') {
-            result = x - y;
-        }
-        else if (operator == '*') {
-            result = x * y;
-        }
-        else if (operator == '/') {
-            result = x / y;
-        }
-        if (result == c) {
-            corret = "Correct! Good Job.";
-        }
-        else{
-            correct = "Incorrect! Try again!";
-        }
-    
-        document.getElementById('outputDiv').innerHTML = correct;
-    }
     </script>
 </head>
+
 <body>
-    <h1> Take a math quize!</h1>
-    
+    <h1> Take a math quiz!</h1>
+
     <input type="text" id="xInputBox">
-    +,-,* or / 
+    +,-,* or /
     <input type="text" id="operatorInputBox">
     <input type="text" id="yInputBox">
     =
     <input type="text" id="cInputBox">Result
     <br>
-    <button type="button" onclick="mathQuize()">Check your answer</button> 
-    <br>    
+    <button type="button" onclick="mathQuiz()">Check your answer</button>
+    <br>
     <div id="outputDiv"></div>
 </body>
+
 </html>
