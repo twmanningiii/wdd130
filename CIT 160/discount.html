@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,18 +9,18 @@
     <script>
         function salesDay() {
             var dayOfWeek = new Date().getDay();
-                      
+
             let sub = parseFloat(document.getElementById('sub_total').value);
             let tax = 0.06
             let discount = 0.1
             let total;
 
 
-            if (sub > 50 && dayOfWeek == 2 || dayOfWeek ==3) {
+            if (sub > 50 && dayOfWeek == 2 || dayOfWeek == 3) {
                 total = sub - (sub * discount);
             }
-                        
-            else { 
+
+            else {
                 total = sub + (sub * tax)
             }
             document.getElementById('sales').innerHTML = total;
@@ -28,12 +29,14 @@
 
     </script>
 </head>
+
 <body>
     Enter sub-total for daily sales: <input type="text" id="sub_total">
     <br>
-    Discount will be applied if Tuseday or Wedensday) 
+    Discount will be applied if Tuseday or Wedensday)
     <br>
-    <button type="button" onclick="salesDay()">Calculate total</button> 
+    <button type="button" onclick="salesDay()">Calculate total</button>
     Total after discount and tax:<output id="sales"></output>
 </body>
+
 </html>
