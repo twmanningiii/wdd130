@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get up or sleep in!</title>
+    <script>
+        function snooze() {
+            var now = new Date();
+            var month = now.getMonth();
+            var dayOfMonth = now.getDate();
+            var dayOfWeek = now.getDay();
+            let message;
+            if (day == 6 || 0 && day == 01 && month == 00 || day == 04 && month == 06 || day == 25 & month == 11) {
+                message = 'Sleep in';
+            }
+            else {
+                message = 'Get up';
+            }
+            document.getElementById('output').innerHTML = message;
+        }
+
+    </script>
+</head>
+
+<body>
+    Can I sleep in today?
+    <br>
+    <button type="button" onclick="snooze()">Check the day</button>
+    <div id="output"></div>
+</body>
+
+</html>
