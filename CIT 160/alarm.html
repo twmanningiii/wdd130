@@ -13,11 +13,11 @@
             var dayOfMonth = now.getDate();
             var dayOfWeek = now.getDay();
             let message;
-            if (day == 6 || 0 && day == 01 && month == 00 || day == 04 && month == 06 || day == 25 & month == 11) {
+            if (dayOfWeek == 6 || 0 && dayOfWeek == 01 && month == 00 || dayOfMonth == 04 && month == 06 || dayOfMonth == 25 & month == 11) {
                 message = 'Sleep in';
             }
             else {
-                message = 'Get up';
+                message = 'Get up!';
             }
             document.getElementById('output').innerHTML = message;
         }
