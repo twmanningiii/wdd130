@@ -13,7 +13,7 @@
             var dayOfMonth = now.getDate();
             var dayOfWeek = now.getDay();
             let message;
-            if (dayOfWeek == 6 || 0 && dayOfMonth == 01 && month == 00 || dayOfMonth == 04 && month == 06 || dayOfMonth == 25 & month == 11) {
+            if (dayOfWeek == 6 || dayOfWeek == 0 || (dayOfMonth == 01 && month == 00) || (dayOfMonth == 04 && month == 06) || (dayOfMonth == 25 && month == 11)) {
                 message = 'Sleep in';
             }
             else {

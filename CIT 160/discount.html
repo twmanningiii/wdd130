@@ -15,7 +15,7 @@
             let discount = 0.1
             let total;
 
-            if (sub > 50 && dayOfWeek == 2 || dayOfWeek == 3) {
+            if (sub > 50 && (dayOfWeek == 2 || dayOfWeek == 3)) {
                 total = sub - (sub * discount);
             }
 
@@ -30,6 +30,8 @@
 </head>
 
 <body>
+    <h2>Shopping Discounts for Tuesday and Wedensday</h2>
+    <br>
     Enter sub-total for sale: <input type="text" id="sub_total">
     <br>
     (Discount will be applied if Tuesday or Wednesday)
