@@ -32,12 +32,15 @@
 <body>
     <h2>Shopping Discounts for Tuesday and Wedensday</h2>
     <br>
-    Enter sub-total for sale: <input type="text" id="sub_total">
+    Enter sub-total for sale: <input type="text" id="sub_total" size="3">
     <br>
-    (Discount will be applied if Tuesday or Wednesday)
+    (Discount will be applied if <br> Tuesday or Wednesday and <br>
+    automaticly upon checkout.)
+    <br>
+    <br>
+    Total after discount and tax:<output id="sales"></output>
     <br>
     <button type="button" onclick="salesDay()">Calculate total</button>
-    Total after discount and tax:<output id="sales"></output>
     <div id="output"></div>
 </body>
 
