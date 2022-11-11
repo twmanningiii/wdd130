@@ -7,18 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Powers</title>
     <script>
-        //
+        //User initiates code
+        //The code processes the calculation of the power of 2 from 0 to 31
+        //Code outputs "message" (the calculations)
         function powers() {
-            let message = '';
+            let message = "";
 
             for (let i = 0; i <= 31; i++) {
-               
-                message =+ Math.pow(2, i) + '' + '<br>';
+                message += Math.pow(2, i) + '' + '<br>';
             }
             document.getElementById('powComp').innerHTML = message;
-
         }
-
     </script>
 </head>
 

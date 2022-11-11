@@ -8,10 +8,10 @@
     <title>Five Times TO 60 Table</title>
     <SCRIPT>
         //Create a table that displays the result and multiplication using the number'5'
-        //Then mulitiple '5' times the numbers 1 through 12
-        //Output the result of the function displaying each equasion 
-        //in a table.
-        
+        //Multiply '5' times the numbers 1 through 12 
+        //Output the result of the function displaying each equation  
+        //in a table. 
+
         function fiveTimes() {
             let message = "";
             for (i = 1; i <= 12; i++) {
@@ -19,7 +19,6 @@
                 let table = i * 5;
                 message += mult + '*' + i + '=' + table + '<br>';
             }
-
             document.getElementById('five').innerHTML = message;
         }
     </SCRIPT>
@@ -28,7 +27,7 @@
 <body>
     <h1>Five Times Table</h1>
     <button type="button" onclick="fiveTimes()"> Display Five Times Table</button>
-    <div id = 'five'></div>
+    <div id='five'></div>
 
 </body>
 
