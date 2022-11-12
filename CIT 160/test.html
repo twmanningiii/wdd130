@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <title>Title</title>
+    <script>
+        /* Input: Numbers into both fields "Start", "End" and "Divisor"
+         * Processing: Click button to evaluate datd
+         * Output: Show results of the function
+         */
+        function divideFunc() {
+
+
+            let num1 = Number(document.getElementById("start").value);
+            let num2 = Number(document.getElementById("end").value);
+            let num3 = Number(document.getElementById("divisor").value);
+            let div = document.getElementById("output");
+            div.textContent = "";
+            for (var i = num1; i <= num2; i++) {
+                if (i % num3 == 0) {
+                    div.textContent += i + " ";
+
+                }
+
+            }
+
+        }
+    </script>
+</head>
+
+<body>
+    Start: <input type="text" id="start" size="5"><br>
+    End: <input type="text" id="end" size="5"><br>
+    Divisor: <input type="text" id="divisor" size="5"><br>
+    <button type="button" onclick="divideFunc()">Click</button>
+    <div id="output"></div>
+</body>
+
+</html>
