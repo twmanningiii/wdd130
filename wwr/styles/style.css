@@ -315,13 +315,13 @@ h2 {
 }
 .destro-card {
     margin: 200px 0;
-    grid-column: 1/7;
+    grid-column: 1/6;
     
 }
 
 .grand-card {
     margin: 200px 0;
-    grid-column: 1/7;
+    grid-column: 1/6;
     
 }
 
