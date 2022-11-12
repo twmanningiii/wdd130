@@ -301,3 +301,33 @@ h2 {
     }
 }
 
+.rivers-grid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
+
+.salmon-card {
+    margin: 200px 0;
+    grid-column: 1/6;
+}
+.salmon  {
+    grid-column: 8/10;
+}
+.destro-card {
+    margin: 200px 0;
+    grid-column: 1/7;
+    
+}
+
+.grand-card {
+    margin: 200px 0;
+    grid-column: 1/7;
+    
+}
+
+.salmon-card,
+.destro-card,
+.grand-card {
+    margin: 50px auto;
+    width: 60%;
+}
