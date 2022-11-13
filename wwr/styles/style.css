@@ -308,8 +308,8 @@ h2 {
 
 .salmon-card {
     margin: 200px 0;
-    grid-column: 1/6;
-    grid-row: 1/3;
+    grid-column: 1/4;
+    grid-row: 1/4;
 }
 .salmon  {
     grid-column: 5/10;
@@ -317,8 +317,8 @@ h2 {
 }
 .destro-card {
     margin: 200px 0;
-    grid-column: 1/6;
-    grid-row: 4/6;
+    grid-column: 1/4;
+    grid-row: 4/7;
 }
 .destro {
     grid-column: 5/10;
@@ -327,8 +327,8 @@ h2 {
 
 .grand-card {
     margin: 200px 0;
-    grid-column: 1/6;
-    grid-row: 7/9;
+    grid-column: 1/4;
+    grid-row: 7/10;
 }
 .grand {
     grid-column: 5/10;
@@ -338,6 +338,6 @@ h2 {
 .salmon-card,
 .destro-card,
 .grand-card {
-    margin: 50px auto;
+    margin: 50px 50px auto;
     }
 
