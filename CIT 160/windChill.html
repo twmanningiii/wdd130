@@ -7,13 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wind Chill Calc</title>
     <script>
+        //User inputs a temperature and a wind speed.
+        //Temperature and windspeed are processed to the windChill function.
+        //Output returns the result to the user.
+
         function doInputOutput() {
             let temp = parseFloat(document.getElementById('temperature').value);
             let wSpeed = parseFloat(document.getElementById('windSpeed').value);
 
             document.getElementById('outputDiv').innerHTML = windChill(temp, wSpeed).toFixed(2) + '\xB0F';
         }
-        
+
         function windChill(temp, wSpeed) {
             let f = 35.74 + 0.6215 * temp - 35.75 * Math.pow(wSpeed, 0.16) + 0.4275 * temp * Math.pow(wSpeed, 0.16);
             return f;
