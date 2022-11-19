@@ -34,7 +34,7 @@ Fonts are separated by a | */
 /*  Look around below...but DON'T CHANGE ANYTHING! */
 
 body {
-  max-width: auto;
+ width: auto;
   margin: 0;
   padding: 4em;
   font-size: 18px;
@@ -63,7 +63,7 @@ img {
 }
 
 nav {
-  background-color: var(--nav-background-color);
+  background-color: #390000;
   line-height: 3em;
   text-align: center;
   font-size: 1.2em;
@@ -235,11 +235,13 @@ p.colored {
   grid-template-columns: repeat(10, 1fr);
 }
 
-.container {
+.container-grid{
   display: grid;
   grid-column: 7/11;
-  grid-row: 7/11;
-  background-color: #858585;
+  grid-row: 1/2;
+}
+.container {  
+ 
   color: white;
   justify-content: center;
   align-items: center;
@@ -316,6 +318,7 @@ p.colored {
   justify-content: center;
   align-items: center;
   text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+  transition: background-color 0.2;
 }
 
 .days div:hover:not(.today) {
@@ -332,3 +335,4 @@ p.colored {
 .today {
   background-color: #390000;
 }
+const date = new Date();
