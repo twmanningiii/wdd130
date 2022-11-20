@@ -384,9 +384,19 @@ footer p a:hover {
   background-color: #390000;
 }
 .mainEvent {
-  background-color: #862f20;
+  
+  padding: 10px;
+  background-color: #7c3328;
   background-size:cover;
   background-blend-mode:darken;
-  background-image: url("https://twmanningiii.github.io/wdd130/wwr/yakuzasite/images/theWitness.jpg");
+  background-image: url("https://twmanningiii.github.io/wdd130/wwr/yakuzasite/images/theWitness.jpg")
 
+}
+
+.rules {
+  padding:10px;
+  background-color: #AA21EB;
+  background-size: cover;
+  background-blend-mode:darken;
+  background-image: url("https://twmanningiii.github.io/wdd130/wwr/yakuzasite/images/pvp.png");
 }
