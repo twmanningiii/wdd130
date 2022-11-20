@@ -24,9 +24,9 @@ Fonts are separated by a | */
   --paragraph-color-on-color: #A30000;
   /* paragraph text on a colored background */
   --paragraph-background-color: #390000;
-  --nav-link-color: #396E94;
+  --nav-link-color: white;
   --nav-background-color: #43085e;
-  --nav-hover-link-color: white;
+  --nav-hover-link-color: black;
   --nav-hover-background-color: #AA21EB;
 }
 
@@ -42,12 +42,12 @@ body {
 }
 
 .logo {
-  width: 80px;
+  width: 100px;
   padding-top: 5px;
 }
 
 .icon {
-  width: 80px;
+  width: 100px;
   padding-top: 10px;
 }
 
@@ -64,20 +64,24 @@ img {
 
 nav {
   background-color: #390000;
+  color:#ffffff;
   line-height: 3em;
   text-align: center;
-  font-size: 1.2em;
+  font-size: 2.2em;
+  font-family: "Nanum Brush Script";
+  text-shadow: 0 .3rem .5rem rgba(0, 0, 0, 0.5);
 }
 
 nav {
   list-style-type: none;
   display: flex;
+  justify-content: space-around;
 
 }
 
 nav a {
   padding: 1em;
-  min-width: 120px;
+  min-width: 300px;
   text-decoration: none;
   padding: 10px;
 
@@ -99,8 +103,18 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--heading-font);
+  font-family: "Nanum Brush Script";
   color: var(--headline-color-on-white);
+}
+h1 {
+  font-size: 6rem;
+  font-weight: 400;
+  text-align: center;
+  grid-column: 1/4;
+  grid-row: 1;
+  color:#ffffff;
+  padding: 0;
+  text-shadow: 0 .3rem .5rem rgba(0, 0, 0, 0.5);
 }
 
 h2 {
@@ -126,9 +140,13 @@ header>h2 {
 }
 
 p {
-  font-family: var(--paragraph-font);
-  color: var(--paragraph-color);
+  grid-column: 1/2;
+  grid-row: 2/4;
+  font-family:  "Nanum Brush Script";
+  color: white;
+  font-size: 2.5rem;
   padding: 1em;
+  text-shadow: 0 .3rem .5rem rgba(0, 0, 0, 0.5);
 }
 
 .colors {
@@ -223,9 +241,11 @@ p.colored {
 
 .hero {
   display: grid;
-  grid-template-columns: repeat(10, 1fr);
-  grid-column: 0/11;
+  grid-template-columns: (2fr, 1fr, 2fr); 
+  grid-template-rows: (1fr, 2fr, 1fr);
   margin-top: 0;
+  grid-gap: 10px;
+  background-size:cover;
   background-color: '#43085e';
   background-image: url(https://twmanningiii.github.io/wdd130/wwr/yakuzasite/images/bodyback2.jpg);
 }
@@ -235,13 +255,39 @@ p.colored {
   grid-template-columns: repeat(10, 1fr);
 }
 
-.container-grid{
-  display: grid;
-  grid-column: 7/11;
-  grid-row: 1/2;
+footer a {
+  color: black;
 }
+
+footer a:hover {
+  color:#AA21EB;
+}
+
+footer {
+  color: black;
+  background-color:#390000;
+  text-decoration: none;
+  font-size: 1.2em;
+  padding: 0;
+  margin-top: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer p a:hover {
+  text-decoration: underline;
+}
+
+.social img {
+  padding-top: 15px;
+}
+
+
 .container {  
- 
+  grid-column: 3/4;
+  grid-row: 2/3;
+  font-family:  "Nanum Brush Script"; 
   color: white;
   justify-content: center;
   align-items: center;
@@ -252,6 +298,7 @@ p.colored {
   height: 52rem;
   background-color: #222227;
   box-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 0.4);
+  
 }
 
 .month {
@@ -276,7 +323,8 @@ p.colored {
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0rem;
+  text-shadow: 0 .3rem .5rem rgba(0, 0, 0, 0.5);
 }
 
 .month p {
@@ -335,4 +383,10 @@ p.colored {
 .today {
   background-color: #390000;
 }
-const date = new Date();
+.mainEvent {
+  background-color: #862f20;
+  background-size:cover;
+  background-blend-mode:darken;
+  background-image: url("https://twmanningiii.github.io/wdd130/wwr/yakuzasite/images/theWitness.jpg");
+
+}
