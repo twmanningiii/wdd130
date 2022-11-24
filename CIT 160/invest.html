@@ -10,10 +10,10 @@
 
 
         function doFV() {
-            let principal = document.getElementById('principal').value;
-            let annualRate = document.getElementById('annualRate').value;
-            let years = document.getElementById('years').value;
-            let periods = document.getElementById('periodsPerYear').value;
+            let principal = parseFloat(document.getElementById('principal').value);
+            let annualRate = parseFloat(document.getElementById('annualRate').value);
+            let years = parseFloat(document.getElementById('years').value);
+            let periods = parseFloat(document.getElementById('periods').value);
 
             document.getElementById('outputDiv').innerHTML = computeFutureValue(principal, annualRate, years, periods);
         }
