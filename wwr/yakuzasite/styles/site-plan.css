@@ -256,7 +256,7 @@ p.colored {
 }
 
 footer a {
-  color: black;
+  color:#ffffff;
 }
 
 footer a:hover {
@@ -264,8 +264,8 @@ footer a:hover {
 }
 
 footer {
-  color: black;
   background-color:#390000;
+  color: white;
   text-decoration: none;
   font-size: 1.2em;
   padding: 0;
