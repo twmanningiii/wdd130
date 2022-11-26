@@ -25,6 +25,7 @@
             future = principal * Math.pow((1 + (annualRate)), years);
 
             document.getElementById('future').value = '$' + Math.round(future * 100) / 100;
+            return future;
 
         }
 
