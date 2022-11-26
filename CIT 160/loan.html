@@ -13,7 +13,7 @@
       let years = parseFloat(document.getElementById('years').value);
       let periodsPerYear = parseFloat(document.getElementById('periodsPerYear').value);
       let result = computePayment(principal, annualRate, years, periodsPerYear);
-      document.getElementById('paymentDiv').innerHTML = '$' + result;
+      document.getElementById('paymentDiv').innerHTML = result;
     }
 
     function computePayment(principal, annualRate, years, periodsPerYear) {

@@ -32,7 +32,7 @@ Fonts are separated by a | */
 
 #content {
     max-width: 2500px;
-    margin: 0;
+    margin: 10px;
 }
 
 header {
@@ -45,17 +45,17 @@ header {
 
 .logo {
     width: 150px;
-    padding-top: 5px;
+    padding-top: 10px;
     border-radius: 10px;
 }
 
 .icon {
-    width: 100px;
+    width: 200px;
     padding-top: 10px;
 }
 
 #logo_link {
-    padding-top: 7px;
+    padding-top: 20px;
     justify-self: center;
     align-self: center;
 }
@@ -72,7 +72,7 @@ nav {
 
 nav {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
 
 }
 
@@ -106,10 +106,8 @@ nav a:hover {
     background-image: url(https://twmanningiii.github.io/wdd130/wwr/yakuzasite/images/bodyback2.jpg);
 }
 
-.hero-img {
-    display: cover;
-    margin: 0 auto;
-}
+
+
 
 h1,
 h2,
@@ -129,7 +127,7 @@ h1 {
     grid-row: 1;
     color: #ffffff;
     padding: 0;
-    text-shadow: 0 .3rem .5rem rgba(0, 0, 0, 0.5);
+    text-shadow: 0 .7rem 1.9rem rgba(0, 0, 0, 0);
 }
 
 h2 {
@@ -137,9 +135,9 @@ h2 {
 }
 
 body {
-    width: auto;
+    color: #390000;
     margin: 0;
-    padding: 4em;
+    padding: 0;
     font-size: 18px;
     text-align: center;
 }
@@ -170,13 +168,129 @@ p {
     text-shadow: 0 .3rem .5rem rgba(0, 0, 0, 0.5);
 }
 
+.container {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    font-family: "Nanum Brush Script";
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+ul {
+    list-style-type: none;
+}
+
+body {
+
+    font-family: "Nanum Brush Script";
+}
+
+.month {
+
+    font-family: "Nanum Brush Script";
+    color: white;
+    padding: 70px 25px;
+    width: 100%;
+    background: #222227;
+    text-align: center;
+}
+
+.month ul {
+    margin: 0;
+    padding: 0;
+}
+
+.month ul li {
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.month .prev {
+    float: left;
+    padding-top: 10px;
+}
+
+.month .next {
+    float: right;
+    padding-top: 10px;
+}
+
+.weekdays {
+    margin: 0;
+    padding: 10px 0;
+    background-color: #ddd;
+}
+
+.weekdays li {
+    display: inline-block;
+    width: 13.6%;
+    color: #666;
+    text-align: center;
+}
+
+.days {
+    padding: 10px 0;
+    background: #eee;
+    margin: 0;
+}
+
+.days li {
+    list-style-type: none;
+    display: inline-block;
+    width: 13.6%;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 12px;
+    color: #777;
+}
+
+.days li .active {
+    padding: 5px;
+    background: #1abc9c;
+    color: white !important
+}
+
+/* Add media queries for smaller screens */
+@media screen and (max-width:720px) {
+
+    .weekdays li,
+    .days li {
+        width: 13.1%;
+    }
+}
+
+@media screen and (max-width: 420px) {
+
+    .weekdays li,
+    .days li {
+        width: 12.5%;
+    }
+
+    .days li .active {
+        padding: 2px;
+    }
+}
+
+@media screen and (max-width: 290px) {
+
+    .weekdays li,
+    .days li {
+        width: 12.2%;
+    }
+}
+
 footer a {
     color: #ffffff;
 }
 
 footer a:hover {
     color: #AA21EB;
-    background-color: var(--nav-hover-background-color);
+
 }
 
 footer {
@@ -194,8 +308,10 @@ footer {
 footer p a:hover {
     text-decoration: underline;
     background-color: var(--nav-hover-background-color);
+    color: var(--nav-hover-link-color);
+    text-shadow: 0 .5rem .8rem rgba(0, 0, 0, 0.5);
 }
 
 .social img {
-    padding-top: 15px;
+    padding-top: 10px;
 }
