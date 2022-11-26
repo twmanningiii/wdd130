@@ -241,8 +241,8 @@ p.colored {
 
 .hero {
   display: grid;
-  grid-template-columns: (2fr, 1fr, 2fr); 
-  grid-template-rows: (1fr, 2fr, 1fr);
+  grid-column: (2fr, 1fr, 2fr); 
+  grid-row: (1fr, 2fr, 1fr);
   margin-top: 0;
   grid-gap: 10px;
   background-size:cover;
