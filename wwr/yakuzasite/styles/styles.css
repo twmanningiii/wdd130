@@ -176,6 +176,7 @@ footer a {
 
 footer a:hover {
     color: #AA21EB;
+    background-color: var(--nav-hover-background-color);
 }
 
 footer {
