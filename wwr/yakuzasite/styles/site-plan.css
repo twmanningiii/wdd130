@@ -290,7 +290,7 @@ footer p a:hover {
   grid-column: 3/4;
   grid-row: 2/3;
   font-family:  "Nanum Brush Script"; 
-  color: white;
+  color: black;
   justify-content: center;
   align-items: center;
   
@@ -300,7 +300,9 @@ footer p a:hover {
   width: 45rem;
   height: 52rem;
   margin-right: 25px; 
-  margin-top: 30px;  
+  margin-top: 30px;
+  background-color:#7c3328 ;
+  background-blend-mode: luminosity;
   background-position: center;
   background-image: url('https://twmanningiii.github.io/wdd130/wwr/yakuzasite/images/savLight2.jpg');
   box-shadow: 0 0.5rem 3rem rgba(5, 5, 5, 0.4);
@@ -313,7 +315,7 @@ footer p a:hover {
 .month {
   width: auto;
   height: 11rem;
-  background-color: #390000;
+  background-color:#390000;
   margin-top: 20px;
   display: flex;
   justify-content: space-between;
@@ -321,7 +323,7 @@ footer p a:hover {
   padding: 0 2rem;  
   text-align: center;
   text-shadow: 0 .3rem .5rem rgba(0, 0, 0, 0.5);
-  border-radius: 15%;
+  border-radius: 10%;
 }
 
 .month i {
@@ -331,15 +333,16 @@ footer p a:hover {
 
 .month h1 {
   font-size: 3rem;
-  font-weight: 400;
+  font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
   margin-bottom: 0rem;
-  text-shadow: 0 .3rem .5rem rgba(0, 0, 0, 0.5);
+  text-shadow: 0 .5rem .7rem rgba(0, 0, 0, 0.5);
 }
 
 .month p {
   font-size: 1.6rem;
+  text-shadow: 0 .5rem .7rem rgba(0, 0, 0, 0.5);
 }
 
 .weekdays {
@@ -351,14 +354,14 @@ footer p a:hover {
 }
 
 .weekdays div {
-  font-size: 1.5rem;
-  font-weight: 400;
+  font-size: 1.7rem;
+  font-weight: 500;
   letter-spacing: 0.1rem;
   width: calc(44.2rem/7);
   display: flex;
   justify-content: center;
   align-items: center;
-  text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+  text-shadow: 0 0.5rem 0.7rem rgba(0, 0, 0, 0.5);
 }
 
 .days {
@@ -369,20 +372,21 @@ footer p a:hover {
 }
 
 .days div {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
+  font-weight: 500;
   margin: 0.3rem;
   width: calc(40.4rem/7);
   height: 5rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+  text-shadow: 0 0.5rem 0.7rem rgba(0, 0, 0, 0.5);
   transition: background-color 0.2;
 }
 
 .days div:hover:not(.today) {
-  background-color: #262626;
-  border: 0.2rem solid #777;
+  background-color:#390000;
+  border: 0.2rem solid #7c3328;
   cursor: pointer;
   border-radius: 50%;
 }
