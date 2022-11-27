@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&Noto+Sans&family=Roboto&family=Rock+Salt&display=swap');
 
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
 *{
     margin: 0;
     padding: 0;
@@ -11,9 +13,76 @@ body{
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background-image: url("https://twmanningiii.github.io/wdd130/wwr/yakuzasite/images/savLight.jpg");
+        
+    
 }
 .wrapper{
     width: 450px;
-    background: white;
+    background-size: 450px;
+    background-position: center;
+    background-image: url('https://twmanningiii.github.io/wdd130/wwr/yakuzasite/images/savLight2.jpg');
+    border-radius: 10px;
+    }
+.wrapper header{
+    display: flex;
+    align-items: center;
+    padding: 25px 30px 10px;
+    justify-content: space-between;
+}
+header .current-date{
+font-size: 1.45rem;
+font-weight: 500;
+
+}
+header .icons span{
+    height: 38px;
+    width: 38px;
+    color: #3b523d;
+    font-size: 1.9rem;
+    margin: 0 1px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 38px;
+    border-radius: 50%;
+    background: rgb(155, 194, 151);
+
+}
+header .icons span:hover{
+    background: rgb(182, 176, 176);
+}
+header .icons span:last-child{
+    margin-right: -10;
+
+}
+.calander{
+    padding: 20px;
+}
+.calander .days{
+    margin-bottom: 20px;
+} 
+.calander .weeks li{
+    font-weight: 500;
+}
+.calander .days li{
+    cursor: pointer;
+    margin-top: 30px;    
+}
+.calander ul{
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.calander ul li{
+    width: calc(100% / 7);
+}
+.calander ul li::before{
+    position: absolute;
+    content: "";
+    height: 40px;
+    width: 40px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background:  rgb(182, 176, 176);
 }
