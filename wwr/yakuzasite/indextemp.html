@@ -7,15 +7,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>D2 Yakuza Calander</title>
     <link type="text/css" rel="stylesheet" href="styles/stylesTemp.css">
-    <limk rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&Noto+Sans&family=Roboto&family=Rock+Salt&display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
- 
+    <limk rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&Noto+Sans&family=Roboto&family=Rock+Salt&display=swap">
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+        <script>
+            const currentDate = document.querySelector(".current-date"),
+            daysTag = document.querySelector(".days"),
+
+            let date = new Date(),
+                currYear = date.getFullYear(),
+                currMonth = date.getMonth();
+
+            const months = ['January', "February", "March", "April", "May", "June", "July", "August", "Spetember", "October", "November", "December"];
+
+            const renderCalander = () => {
+                let lastDateofMonth = new Date(currYear, currMonth + 1, 0).getDate();
+                let liTag = "";
+
+                for (let i = 1; i <= lastDateofMonth; i++) {
+                    liTag += <li>${i}</li>;
+                }
+
+                currentDate.innerText = ${months[currMonth]} ${currYear};
+                daysTag.innerText = liTag;
+
+            }
+            renderCalander();
+
+        </script>
+
 </head>
 
 <body>
     <div class='wrapper'>
         <header>
-            <p class="current-date">November 26 2022</p>
+            <p class="current-date"></p>
             <div class="icons">
                 <span class="material-symbols-outlined">chevron_left</span>
                 <span class="material-symbols-outlined">chevron_right</span>
@@ -33,10 +60,10 @@
                 <li>Sun</li>
             </ul>
             <ul class="days">
-                <li>28</li>
-                <li>29</li>
-                <li>30</li>
-                <li>31</li>
+                <li class="inactive">28</li>
+                <li class="inactive">29</li>
+                <li class="inactive">30</li>
+                <li class="inactive">31</li>
                 <li>1</li>
                 <li>2</li>
                 <li>3</li>
@@ -62,12 +89,12 @@
                 <li>23</li>
                 <li>24</li>
                 <li>25</li>
-                <li>26</li>
+                <li class="active">26</li>
                 <li>27</li>
                 <li>28</li>
                 <li>29</li>
                 <li>30</li>
-                <li>31</li>
+                <li class="inactive">1</li>
             </ul>
         </div>
     </div>
@@ -82,7 +109,7 @@
                 <img src="https://twmanningiii.github.io/wdd130/wwr/yakuzasite/images/twitter.png" alt="twitter icon">
             </a>
             <a href="https://instagram.com" target="_blank">
-                <img src="https://twmanningiii.github.io/wdd130/wwr/yakuzasite/images/instagram.png"
+                <img src="https://twmanningiii.github.io/wdd130/wwr/yakuzasite/images/gram.png"
                     alt="instagram icon">
             </a>
         </div>
