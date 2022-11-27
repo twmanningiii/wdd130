@@ -21,10 +21,10 @@
     }
 
     function computePayment(principal, annualRate, years, periodsPerYear) {
-     
-      let r = annualRate/periodsPerYear;
-      return (principal * r) / (1 -(1 + r) ** (-1 * periodsPerYear * years));
-      
+
+      let r = annualRate / periodsPerYear;
+      return (principal * r) / (1 - (1 + r) ** (-1 * periodsPerYear * years));
+
     }
 
     function doBalance() {
@@ -40,10 +40,10 @@
 
     function computeBalance(principal, annualRate, years, periodsPerYear, periodsPaid) {
       let balance;
-      let r = annualRate/periodsPerYear;
-      let y = (1+r) ** periodsPaid;
+      let r = annualRate / periodsPerYear;
+      let y = (1 + r) ** periodsPaid;
       let payment = computePayment(principal, annualRate, years, periodsPerYear);
-      balance = principal * y - (payment * (y-1)) / ratePerPeriod;
+      balance = principal * y - (payment * (y - 1)) / ratePerPeriod;
 
       return balance;
     }
@@ -63,9 +63,9 @@
   <br>
   <button type='button' onclick="doPayment()"> Compute payment</button><input type="text" id='payment'>
   <div id='paymentDiv'></div>
-  
+
   <label>Number of payments paid to date: <input type="number" id='periodsPaid'></label>
- <br>  
+  <br>
   <button type='button' onclick="doBalance()"> Compute payoff amount</button><input type="text" id='payoff'>
   <div id='payoffDiv'></div>
 
