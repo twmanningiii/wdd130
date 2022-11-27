@@ -2,6 +2,7 @@
 Any spaces in your font name should be replaced with a +. 
 Fonts are separated by a | */
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&Noto+Sans&family=Roboto&family=Rock+Salt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
 
 :root {
   /* change the values below to your colors from your palette */
@@ -299,9 +300,10 @@ footer p a:hover {
   width: 45rem;
   height: 52rem;
   margin-right: 25px; 
-  margin-top: 30px; 
-  background-color: #222227;
-  box-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 0.4);
+  margin-top: 30px;  
+  background-position: center;
+  background-image: url('https://twmanningiii.github.io/wdd130/wwr/yakuzasite/images/savLight2.jpg');
+  box-shadow: 0 0.5rem 3rem rgba(5, 5, 5, 0.4);
   border-radius: 10%;
 }
 .calander>h1{
@@ -310,8 +312,9 @@ footer p a:hover {
 
 .month {
   width: auto;
-  height: 12rem;
+  height: 11rem;
   background-color: #390000;
+  margin-top: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -381,6 +384,7 @@ footer p a:hover {
   background-color: #262626;
   border: 0.2rem solid #777;
   cursor: pointer;
+  border-radius: 50%;
 }
 
 .prev-date,
