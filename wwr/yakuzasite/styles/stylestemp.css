@@ -30,7 +30,7 @@ body{
     justify-content: space-between;
 }
 header .current-date{
-font-size: 1.45rem;
+font-size: 2.25rem;
 font-weight: 500;
 
 }
@@ -38,7 +38,7 @@ header .icons span{
     height: 38px;
     width: 38px;
     color: #3b523d;
-    font-size: 1.9rem;
+    font-size: 2.5rem;
     margin: 0 1px;
     cursor: pointer;
     text-align: center;
@@ -104,3 +104,4 @@ header .icons span:last-child{
     background: #390000;
 
 }
+
