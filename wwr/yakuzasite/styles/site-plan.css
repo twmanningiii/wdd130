@@ -35,7 +35,7 @@ Fonts are separated by a | */
 
 body {
  width: auto;
-  margin: 0;
+  margin: 15px;
   padding: 4em;
   font-size: 18px;
   text-align: center;
@@ -107,7 +107,7 @@ h6 {
   color: var(--headline-color-on-white);
 }
 h1 {
-  font-size: 6rem;
+  font-size: 5rem;
   font-weight: 400;
   text-align: center;
   grid-column: 1/4;
@@ -144,6 +144,7 @@ p {
   grid-row: 2/4;
   font-family:  "Nanum Brush Script";
   color: white;
+  margin-top: 0;
   font-size: 2.5rem;
   padding: 1em;
   text-shadow: 0 .3rem .5rem rgba(0, 0, 0, 0.5);
@@ -291,14 +292,20 @@ footer p a:hover {
   color: white;
   justify-content: center;
   align-items: center;
+  
 }
 
 .calander {
   width: 45rem;
   height: 52rem;
+  margin-right: 25px; 
+  margin-top: 30px; 
   background-color: #222227;
   box-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 0.4);
-  
+  border-radius: 10%;
+}
+.calander>h1{
+  margin-top: 30px;
 }
 
 .month {
@@ -308,9 +315,10 @@ footer p a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 2rem;
+  padding: 0 2rem;  
   text-align: center;
   text-shadow: 0 .3rem .5rem rgba(0, 0, 0, 0.5);
+  border-radius: 15%;
 }
 
 .month i {
