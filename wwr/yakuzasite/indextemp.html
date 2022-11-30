@@ -25,10 +25,10 @@
             let liTag = "";
 
             for (let i = 1; i <= lastDateofMonth; i++) {
-                liTag += <li>${i}</li>;
+                liTag += `<li>${i}</li>`;
             }
 
-            currentDate.innerText = $(months[currMonth]) ${ currYear };
+            currentDate.innerText = `$(months[currMonth]) ${ currYear }`;
             daysTag.innerText = liTag;
 
         }
