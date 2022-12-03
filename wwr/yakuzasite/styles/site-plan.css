@@ -37,7 +37,7 @@ Fonts are separated by a | */
 body {
   height: 100%;
   width: auto;
-  margin: 15px;
+  margin: 0;
   padding: 4em;
   font-size: 18px;
   text-align: center;
@@ -405,10 +405,14 @@ footer p a:hover {
 
 
 .mainEvent {
-  box-sizing: border-box;  
-
+  padding: 10px;
+  background-color: #7c3328;
+  background-size:cover;
+  background-blend-mode:darken;
+  background-image: url("https://twmanningiii.github.io/wdd130/wwr/yakuzasite/images/theWitness.jpg")
+  
 }
-.mainEvent.bg-image {
+.bg-image {
   /* Full height */
   height: 50%;
 
@@ -419,30 +423,28 @@ footer p a:hover {
 }
 
 /* Images used */
-.mainEvent.img1 {
+.img1 {
   background-image: url("https://twmanningiii.github.io/wdd130/wwr/yakuzasite/images/theWitness.jpg");
 }
 
-.mainEvent.img2 {
+.img2 {
   background-image: url("https://twmanningiii.github.io/wdd130/wwr/yakuzasite/images/worlds.jpg");
 }
 
-.mainEvent.img3 {
+.img3 {
   background-image: url("https://twmanningiii.github.io/wdd130/wwr/yakuzasite/images/witShips.jpg");
 }
 
-.mainEvent.img4 {
+.img4 {
   background-image: url("https://twmanningiii.github.io/wdd130/wwr/yakuzasite/images/enough.jpg");
 }
 
-.mainEvent.img5 {
+.img5 {
   background-image: url("https://twmanningiii.github.io/wdd130/wwr/yakuzasite/images/emperorCalus.jpg");
 }
 
-.mainEvent.img6 {
-  background-image: url("https://twmanningiii.github.io/wdd130/wwr/yakuzasite/images/titan.jpg");
-}
-.mainEvent.bg-text {
+
+.main .mainEvent.bg-text {
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
   color: white;
@@ -454,9 +456,10 @@ footer p a:hover {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
-  width: 300px;
+  width: 1200px;
   padding: 20px;
   text-align: center;
+  background-image: url("https://twmanningiii.github.io/wdd130/wwr/yakuzasite/images/theWitness.jpg"), url("https://twmanningiii.github.io/wdd130/wwr/yakuzasite/images/titan.jpg");
 }
 
 .rules {
