@@ -35,7 +35,8 @@ Fonts are separated by a | */
 /*  Look around below...but DON'T CHANGE ANYTHING! */
 
 body {
- width: auto;
+  height: 100%;
+  width: auto;
   margin: 15px;
   padding: 4em;
   font-size: 18px;
@@ -65,7 +66,7 @@ img {
 
 nav {
   background-color: #390000;
-  color:#ffffff;
+  color: #ffffff;
   line-height: 3em;
   text-align: center;
   font-size: 2.2em;
@@ -107,13 +108,14 @@ h6 {
   font-family: "Nanum Brush Script";
   color: var(--headline-color-on-white);
 }
+
 h1 {
   font-size: 5rem;
   font-weight: 400;
   text-align: center;
   grid-column: 1/4;
   grid-row: 1;
-  color:#ffffff;
+  color: #ffffff;
   padding: 0;
   text-shadow: 0 .3rem .5rem rgba(0, 0, 0, 0.5);
 }
@@ -143,7 +145,7 @@ header>h2 {
 p {
   grid-column: 1/2;
   grid-row: 2/4;
-  font-family:  "Nanum Brush Script";
+  font-family: "Nanum Brush Script";
   color: white;
   margin-top: 0;
   font-size: 2.5rem;
@@ -243,11 +245,11 @@ p.colored {
 
 .hero {
   display: grid;
-  grid-column: (2fr, 1fr, 2fr); 
+  grid-column: (2fr, 1fr, 2fr);
   grid-row: (1fr, 2fr, 1fr);
   margin-top: 0;
   grid-gap: 10px;
-  background-size:cover;
+  background-size: cover;
   background-color: #43085e;
   background-image: url(https://twmanningiii.github.io/wdd130/wwr/yakuzasite/images/bodyback2.jpg);
 }
@@ -258,15 +260,15 @@ p.colored {
 }
 
 footer a {
-  color:#ffffff;
+  color: #ffffff;
 }
 
 footer p a:hover {
-  color:#AA21EB;
+  color: #AA21EB;
 }
 
 footer {
-  background-color:#390000;
+  background-color: #390000;
   color: white;
   text-decoration: none;
   font-size: 1.2em;
@@ -286,41 +288,42 @@ footer p a:hover {
 }
 
 
-.container {  
+.container {
   grid-column: 3/4;
   grid-row: 2/3;
-  font-family:  "Nanum Brush Script"; 
+  font-family: "Nanum Brush Script";
   color: black;
   justify-content: center;
   align-items: center;
-  
+
 }
 
 .calander {
   width: 45rem;
   height: 52rem;
-  margin-right: 25px; 
+  margin-right: 25px;
   margin-top: 30px;
-  background-color:#7c3328 ;
+  background-color: #7c3328;
   background-blend-mode: luminosity;
   background-position: center;
   background-image: url('https://twmanningiii.github.io/wdd130/wwr/yakuzasite/images/savLight2.jpg');
   box-shadow: 0 0.5rem 3rem rgba(5, 5, 5, 0.4);
   border-radius: 10%;
 }
-.calander>h1{
+
+.calander>h1 {
   margin-top: 30px;
 }
 
 .month {
   width: auto;
   height: 11rem;
-  background-color:#390000;
+  background-color: #390000;
   margin-top: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 2rem;  
+  padding: 0 2rem;
   text-align: center;
   text-shadow: 0 .3rem .5rem rgba(0, 0, 0, 0.5);
   border-radius: 10%;
@@ -385,7 +388,7 @@ footer p a:hover {
 }
 
 .days div:hover:not(.today) {
-  background-color:#390000;
+  background-color: #694e4e;
   border: 0.2rem solid #7c3328;
   cursor: pointer;
   border-radius: 50%;
@@ -399,20 +402,13 @@ footer p a:hover {
 .today {
   background-color: #390000;
 }
+
+
 .mainEvent {
-  
-  padding: 10px;
-  background-color: #7c3328;
-  background-size:cover;
-  background-blend-mode:darken;
-  background-image: url("https://twmanningiii.github.io/wdd130/wwr/yakuzasite/images/theWitness.jpg")
+  box-sizing: border-box;  
 
 }
-* {
-  box-sizing: border-box;
-}
-
-.bg-image {
+.mainEvent.bg-image {
   /* Full height */
   height: 50%;
 
@@ -423,19 +419,50 @@ footer p a:hover {
 }
 
 /* Images used */
-.img1 { background-image: url("https://twmanningiii.github.io/wdd130/wwr/yakuzasite/images/theWitness.jpg"); }
-.img2 { background-image: url("https://twmanningiii.github.io/wdd130/wwr/yakuzasite/images/worlds.jpg"); }
-.img3 { background-image: url("https://twmanningiii.github.io/wdd130/wwr/yakuzasite/images/witShips.jpg"); }
-.img4 { background-image: url("https://twmanningiii.github.io/wdd130/wwr/yakuzasite/images/enough.jpg"); }
-.img5 { background-image: url("https://twmanningiii.github.io/wdd130/wwr/yakuzasite/images/emperorCalus.jpg"); }
-.img6 { background-image: url("https://twmanningiii.github.io/wdd130/wwr/yakuzasite/images/titan.jpg"); }
-
-
-.rules {
-  padding:10px;
-  background-color: #AA21EB;
-  background-size: cover;
-  background-blend-mode:darken;
-  background-image: url("https://twmanningiii.github.io/wdd130/wwr/yakuzasite/images/pvp.png");
+.mainEvent.img1 {
+  background-image: url("https://twmanningiii.github.io/wdd130/wwr/yakuzasite/images/theWitness.jpg");
 }
 
+.mainEvent.img2 {
+  background-image: url("https://twmanningiii.github.io/wdd130/wwr/yakuzasite/images/worlds.jpg");
+}
+
+.mainEvent.img3 {
+  background-image: url("https://twmanningiii.github.io/wdd130/wwr/yakuzasite/images/witShips.jpg");
+}
+
+.mainEvent.img4 {
+  background-image: url("https://twmanningiii.github.io/wdd130/wwr/yakuzasite/images/enough.jpg");
+}
+
+.mainEvent.img5 {
+  background-image: url("https://twmanningiii.github.io/wdd130/wwr/yakuzasite/images/emperorCalus.jpg");
+}
+
+.mainEvent.img6 {
+  background-image: url("https://twmanningiii.github.io/wdd130/wwr/yakuzasite/images/titan.jpg");
+}
+.mainEvent.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  font-size: 80px;
+  border: 10px solid #f1f1f1;
+  position: fixed; /* Stay fixed */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 300px;
+  padding: 20px;
+  text-align: center;
+}
+
+.rules {
+  padding: 10px;
+  background-color: #AA21EB;
+  background-size: cover;
+  background-blend-mode: darken;
+  background-image: url("https://twmanningiii.github.io/wdd130/wwr/yakuzasite/images/pvp.png"), url("https://twmanningiii.github.io/wdd130/wwr/yakuzasite/images/titan.jpg");
+}
