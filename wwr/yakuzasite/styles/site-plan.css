@@ -65,6 +65,7 @@ img {
 }
 
 nav {
+ 
   background-color: #390000;
   color: #ffffff;
   line-height: 3em;
@@ -244,9 +245,10 @@ p.colored {
 }
 
 .hero {
+    
   display: grid;
-  grid-column: (2fr, 1fr, 2fr);
-  grid-row: (1fr, 2fr, 1fr);
+  grid-column: (40%, 20%, 40%);
+  grid-row: (20%, 40%, 20%);
   margin-top: 0;
   grid-gap: 10px;
   background-size: cover;
@@ -289,6 +291,8 @@ footer p a:hover {
 
 
 .container {
+  position: sticky;
+  top: 0;
   grid-column: 3/4;
   grid-row: 2/3;
   font-family: "Nanum Brush Script";
@@ -405,61 +409,67 @@ footer p a:hover {
 
 
 .mainEvent {
-  padding: 10px;
-  background-color: #7c3328;
-  background-size:cover;
-  background-blend-mode:darken;
-  background-image: url("https://twmanningiii.github.io/wdd130/wwr/yakuzasite/images/theWitness.jpg")
-  
-}
-.bg-image {
-  /* Full height */
-  height: 50%;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 1fr,1fr,1fr,1fr;
+  padding: 0;
+ 
+  /* Center and scale the image nicely */  
+ }
+ .mainEvent>h1 {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  font-size: 5rem;
+  font-weight: 400;
+  text-align: center; 
+  color: #ffffff;
+  padding: 0;
+  text-shadow: 0 .3rem .5rem rgba(0, 0, 0, 0.5);
 
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
+ }
+ .mainEvent>p {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  position: sticky;
+  top: 0;
+  width: auto;
+  text-align:start;
+  margin-left: 10%;
+  margin-right: 10%;
+
+ }
+.wrapper_outer{
+height: 100vh;
+overflow: hidden;
+}
+.wrapper{
+  height:100%;
+  width: auto;
+  overflow-x: hidden;
+  perspective: 1px;
+}
+.parallax_section{
+  min-height: 100vh;
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  position: relative;
+  overflow: hidden;
+  transform-style: preserve-3d;
+}
+.parallax_bg{
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
   background-size: cover;
-}
-
-/* Images used */
-.img1 {
-  background-image: url("https://twmanningiii.github.io/wdd130/wwr/yakuzasite/images/theWitness.jpg");
-}
-
-.img2 {
-  background-image: url("https://twmanningiii.github.io/wdd130/wwr/yakuzasite/images/worlds.jpg");
-}
-
-.img3 {
-  background-image: url("https://twmanningiii.github.io/wdd130/wwr/yakuzasite/images/witShips.jpg");
-}
-
-.img4 {
-  background-image: url("https://twmanningiii.github.io/wdd130/wwr/yakuzasite/images/enough.jpg");
-}
-
-.img5 {
-  background-image: url("https://twmanningiii.github.io/wdd130/wwr/yakuzasite/images/emperorCalus.jpg");
-}
-
-
-.main .mainEvent.bg-text {
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
-  color: white;
-  font-weight: bold;
-  font-size: 80px;
-  border: 10px solid #f1f1f1;
-  position: fixed; /* Stay fixed */
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  width: 1200px;
-  padding: 20px;
-  text-align: center;
-  background-image: url("https://twmanningiii.github.io/wdd130/wwr/yakuzasite/images/theWitness.jpg"), url("https://twmanningiii.github.io/wdd130/wwr/yakuzasite/images/titan.jpg");
+  background-position: center center;
+  z-index: -1;
+  min-height: auto;
+  transform: translate3d(0,0, -1px) scale(2);
 }
 
 .rules {
@@ -467,5 +477,5 @@ footer p a:hover {
   background-color: #AA21EB;
   background-size: cover;
   background-blend-mode: darken;
-  background-image: url("https://twmanningiii.github.io/wdd130/wwr/yakuzasite/images/pvp.png"), url("https://twmanningiii.github.io/wdd130/wwr/yakuzasite/images/titan.jpg");
+  background-image: url("https://twmanningiii.github.io/wdd130/wwr/yakuzasite/images/pvp.png"); 
 }
