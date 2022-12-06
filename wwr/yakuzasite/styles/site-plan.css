@@ -35,6 +35,7 @@ Fonts are separated by a | */
 /*  Look around below...but DON'T CHANGE ANYTHING! */
 
 body {
+  background-color: #312727;
   height: 100%;
   width: auto;
   margin: 0;
@@ -247,8 +248,8 @@ p.colored {
 .hero {
     
   display: grid;
-  grid-column: (40%, 20%, 40%);
-  grid-row: (20%, 40%, 20%);
+  grid-template-columns: auto 10px auto;
+  grid-template-rows: 20% 40% 20%;
   margin-top: 0;
   grid-gap: 10px;
   background-size: cover;
@@ -411,12 +412,12 @@ footer p a:hover {
 .mainEvent {
   display: grid;
   grid-template-columns: auto;
-  grid-template-rows: 1fr,1fr,1fr,1fr;
+  grid-template-rows: auto;
   padding: 0;
  
   /* Center and scale the image nicely */  
  }
- .mainEvent>h1 {
+ .mainEvent.h1 {
   grid-column: 1/2;
   grid-row: 1/2;
   font-size: 5rem;
@@ -427,7 +428,7 @@ footer p a:hover {
   text-shadow: 0 .3rem .5rem rgba(0, 0, 0, 0.5);
 
  }
- .mainEvent>p {
+ .mainEvent.p {
   grid-column: 1/2;
   grid-row: 1/2;
   position: sticky;
