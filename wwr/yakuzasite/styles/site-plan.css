@@ -389,12 +389,12 @@ footer p a:hover {
   justify-content: center;
   align-items: center;
   text-shadow: 0 0.5rem 0.7rem rgba(0, 0, 0, 0.5);
-  transition: background-color 0.2;
+  transition: background-color #7c3328;
 }
 
 .days div:hover:not(.today) {
   background-color: #694e4e;
-  border: 0.2rem solid #7c3328;
+  border: 0.4rem solid #7c3328;
   cursor: pointer;
   border-radius: 50%;
 }
