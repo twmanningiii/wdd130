@@ -66,7 +66,7 @@ img {
 }
 
 nav {
- 
+
   background-color: #390000;
   color: #ffffff;
   line-height: 3em;
@@ -246,7 +246,7 @@ p.colored {
 }
 
 .hero {
-    
+
   display: grid;
   grid-template-columns: auto 10px auto;
   grid-template-rows: 20% 40% 20%;
@@ -414,42 +414,47 @@ footer p a:hover {
   grid-template-columns: auto;
   grid-template-rows: auto;
   padding: 0;
- 
-  /* Center and scale the image nicely */  
- }
- .mainEvent h1 {
+
+  /* Center and scale the image nicely */
+}
+
+.mainEvent h1 {
   grid-column: 1/2;
   grid-row: 1/2;
   font-size: 5rem;
   font-weight: 400;
-  text-align: center; 
+  text-align: center;
   color: #ffffff;
   padding: 0;
   text-shadow: 0 .3rem .5rem rgba(0, 0, 0, 0.5);
 
- }
- .mainEvent p {
+}
+
+.mainEvent p {
   grid-column: 1/2;
   grid-row: 1/2;
   position: sticky;
   top: 0;
   width: auto;
-  text-align:center;
+  text-align: center;
   margin-left: 10%;
   margin-right: 10%;
 
- }
-.wrapper_outer{
-height: 100vh;
-overflow: hidden;
 }
-.wrapper{
-  height:100%;
+
+.wrapper_outer {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.wrapper {
+  height: 100%;
   width: auto;
   overflow-x: hidden;
   perspective: 1px;
 }
-.parallax_section{
+
+.parallax_section {
   min-height: 100vh;
   padding: 50px;
   display: flex;
@@ -459,17 +464,19 @@ overflow: hidden;
   position: relative;
   overflow: hidden;
   transform-style: preserve-3d;
-  text-align:center;
+  text-align: center;
 }
-.paraText{
+
+.paraText {
   position: sticky;
   top: 0;
   width: auto;
-  text-align:center;
+  text-align: center;
   margin-left: 10%;
   margin-right: 10%;
 }
-.parallax_bg{
+
+.parallax_bg {
   position: absolute;
   left: 0;
   top: 0;
@@ -479,7 +486,7 @@ overflow: hidden;
   background-position: center center;
   z-index: -1;
   min-height: auto;
-  transform: translate3d(0,0, -1px) scale(2);
+  transform: translate3d(0, 0, -1px) scale(2);
 }
 
 .rules {
@@ -487,5 +494,5 @@ overflow: hidden;
   background-color: #AA21EB;
   background-size: cover;
   background-blend-mode: darken;
-  background-image: url("https://twmanningiii.github.io/wdd130/wwr/yakuzasite/images/pvp.png"); 
+  background-image: url("https://twmanningiii.github.io/wdd130/wwr/yakuzasite/images/pvp.png");
 }
