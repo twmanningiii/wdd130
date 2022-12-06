@@ -417,7 +417,7 @@ footer p a:hover {
  
   /* Center and scale the image nicely */  
  }
- .mainEvent.h1 {
+ .mainEvent h1 {
   grid-column: 1/2;
   grid-row: 1/2;
   font-size: 5rem;
@@ -428,7 +428,7 @@ footer p a:hover {
   text-shadow: 0 .3rem .5rem rgba(0, 0, 0, 0.5);
 
  }
- .mainEvent.p {
+ .mainEvent p {
   grid-column: 1/2;
   grid-row: 1/2;
   position: sticky;
