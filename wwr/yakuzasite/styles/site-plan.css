@@ -474,6 +474,16 @@ footer p a:hover {
   text-align: center;
   margin-left: 10%;
   margin-right: 10%;
+  grid-row: 1/2;
+}
+.pText {
+  position: sticky;
+  top: 0;
+  width: auto;
+  text-align: center;
+  margin-left: 10%;
+  margin-right: 10%;
+  grid-row: 1/2;
 }
 
 .parallax_bg {
