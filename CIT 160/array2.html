@@ -33,6 +33,8 @@ function test() {
     // Display the output string for the user to see.
     document.getElementById('output').innerHTML = output;
 }
+
+//Return the number of "even" interagers in the array.
 function countEvens(list) {
     var count = 0;
     for(var i = 0; i < list.length; i++){
@@ -44,6 +46,7 @@ function countEvens(list) {
     return count;
 
 }
+//Retun multiply result using 3 and 2 as multipliers to list1 and list2 respectively. 
 function multiply(list, multiplier) {
      
     result = [];
@@ -56,6 +59,7 @@ function multiply(list, multiplier) {
     </script>
 </head>
 <body>
+    
     <button type="button" onclick="test()">Results</button>
     <div id="output"></div>
 
