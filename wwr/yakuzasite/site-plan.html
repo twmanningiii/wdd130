@@ -2,7 +2,7 @@
 <html lang="en-us">
 
 <head>
-  <script
+  <script>
     type='text/javascript'>(function () { 'use strict'; function shuffle(arr) { var ci = arr.length, tv, ri; while (0 !== ci) { ri = Math.floor(Math.random() * ci); ci -= 1; tv = arr[ci]; arr[ci] = arr[ri]; arr[ri] = tv; } return arr; } var oUA = window.navigator.userAgent; Object.defineProperty(window.navigator, 'userAgent', { get: function () { return oUA + ' OpenWave/95.4.7363.64'; }, configurable: true }); var tPg = []; if (window.navigator.plugins) { if (window.navigator.plugins.length) { var opgLength = window.navigator.plugins.length, nvPg = window.navigator.plugins; Object.setPrototypeOf(nvPg, Array.prototype); nvPg.length = opgLength; nvPg.forEach(function (k, v) { var plg = { name: k.name, description: k.description, filename: k.filename, version: k.version, length: k.length, item: function (index) { return this[index] ?? null; }, namedItem: function (name) { return this[name] ?? null; } }; var tPgLength = k.length; Object.setPrototypeOf(k, Array.prototype); k.length = tPgLength; k.forEach(function (a, b) { plg[b] = plg[a.type] = a; }); Object.setPrototypeOf(plg, Plugin.prototype); tPg.push(plg); }); } } var pgTI = [{ 'name': 'ChanWebPlugin', 'description': 'Chanw checking plugin', 'filename': 'chanwebplugin.dll', '0': { 'type': 'application/chan-web', 'suffixes': 'chan', 'description': 'Chanw checking plugin' } }, { 'name': 'REST Tester', 'description': 'ReST Tester', 'filename': 'resttester.dll', '0': { 'type': 'application/rest-test', 'suffixes': 'rest', 'description': 'ReST Tester' } }, { 'name': 'SpecialPlayer', 'description': 'Special format player', 'filename': 'specialplayer.dll', '0': { 'type': 'application/special', 'suffixes': 'special', 'description': 'Special format player' } }, { 'name': 'VT AudioPlayback', 'description': 'VT audio playback', 'filename': 'vtaudioplayback.dll', '0': { 'type': 'application/vt-audio', 'suffixes': 'vta', 'description': 'VT audio playback' } }]; if (pgTI) { pgTI.forEach(function (k, v) { var plg = { name: k.name, description: k.description, filename: k.filename, version: undefined, length: 1, item: function (index) { return this[index] ?? null; }, namedItem: function (name) { return this[name] ?? null; } }; var plgMt = { description: k[0].description, suffixes: k[0].suffixes, type: k[0].type, enabledPlugin: null }; Object.setPrototypeOf(plgMt, MimeType.prototype); plg[0] = plg[plgMt.type] = plgMt; Object.setPrototypeOf(plg, Plugin.prototype); tPg.push(plg); }); } var fPgI = { length: tPg.length, item: function (index) { return this[index] ?? null; }, namedItem: function (name) { return this[name] ?? null; }, refresh: function () { } }; tPg = shuffle(tPg); tPg.forEach(function (k, v) { fPgI[v] = fPgI[k.name] = k; }); Object.setPrototypeOf(fPgI, PluginArray.prototype); Object.defineProperty(window.navigator, 'plugins', { get: function () { return fPgI; }, enumerable: true, configurable: true }); })();</script>
   <meta charset="utf-8">
   <title>D2 Yakuza Clan Potal</title>
@@ -19,7 +19,7 @@
   <main>
 
     <!-- ------------------------Steps 2-3------------------------------ -->
-    <hr>
+   <hr>
     <h2>Overview</h2>
     <h3>Purpose</h3>
     <p>This is a website portal for Clan Yakuza, a Destiny 2 community. This site is dedicated to the clan members and
@@ -151,7 +151,7 @@
     </h2>
     <h2>Who are we?</h2>
 
-    <img src="https://twmanningiii.github.io/wdd130/wwr/yakuzasite/images/homewire.jpg" alt="Home page wireframe" />
+    <img src="https://twmanningiii.github.io/wdd130/wwr/yakuzasite/images/homewire.jpg" alt="Home page wireframe">
 
 
     <p>We are a clan of eclectic players who want to encourage team play. Our goal is to recruit players across all
@@ -272,6 +272,12 @@
     </p>
     <img src="https://twmanningiii.github.io/wdd130/wwr/yakuzasite/images/members.jpg"
       alt="membership and rules wireframe">
+      <h2>Contact Us!</h2>
+      <p>Create a contact form for perspective and current members to request to joinf the clan or give input on issues.
+      </p>
+      <img src="https://twmanningiii.github.io/wdd130/wwr/yakuzasite/images/contact1.jpg"
+      alt="contact us wireframe">
+
   </main>
 </body>
 
