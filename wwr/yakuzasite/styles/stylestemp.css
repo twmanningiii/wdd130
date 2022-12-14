@@ -13,15 +13,17 @@ body{
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-        
+    background: #3b523d;   
     
 }
 .wrapper{
     width: 450px;
+    height:fit-content;
     background-size: 450px;
-    background-position: center;
+    background-position: cover;
     background-image: url('https://twmanningiii.github.io/wdd130/wwr/yakuzasite/images/savLight2.jpg');
     border-radius: 10px;
+    
     }
 .wrapper header{
     display: flex;
@@ -100,8 +102,8 @@ header .icons span:last-child{
 .days li:hover::before{
  background-image: url('https://twmanningiii.github.io/wdd130/wwr/yakuzasite/images/savLight2.jpg');
 }
-.days li .active::before{
-    background: #390000;
+.days li.active::before{
+    background: #95f792;
 
 }
 

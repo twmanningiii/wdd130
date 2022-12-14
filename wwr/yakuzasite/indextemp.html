@@ -7,50 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>D2 Yakuza Calander</title>
     <link type="text/css" rel="stylesheet" href="styles/stylesTemp.css">
-
-
-    <script>
-        const currentDate = document.querySelector(".current-date"),
-            daysTag = document.querySelector(".days"),
-            preNextIcon = document.querySelector(".icons span");
-
-        let date = new Date(),
-            currYear = date.getFullYear(),
-            currMonth = date.getMonth();
-
-        const months = ['January', "February", "March", "April", "May", "June", "July", "August", "Spetember", "October", "November", "December"];
-
-        const renderCalander = () => {
-            let lastDateofMonth = new Date(currYear, currMonth + 1, 0).getDate();
-            let liTag = "";
-
-            for (let i = 1; i <= lastDateofMonth; i++) {
-                liTag += `<li>${i}</li>`;
-            }
-
-            currentDate.innerText = `$(months[currMonth]) ${ currYear }`;
-            daysTag.innerText = liTag;
-
-        }
-        renderCalander();
-
-        preNextIcon.forEach(icon => {
-
-            icon.addEventListener("click", () => {
-                currMonth = icon.id === "prev" ? currMonth - 1 : currMonth + 1;
-                renderCalander();
-            });
-        });
-
-    </script>
+    <link rel="stylessheet" href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&Noto+Sans&family=Roboto&family=Rock+Salt&display=swap">
+    <script src="script.js" defer></script>  
 
 </head>
-
 <body>
+    
     <div class='wrapper'>
         <header>
 
-            <p class="current-date">November 2022</p>
+            <p class="current-date"></p>
             <div class="icons">
                 <span id="prev" class="material-symbols-outlined">chevron_left</span>
                 <span id="next" class="material-symbols-outlined">chevron_right</span>
@@ -59,51 +25,15 @@
 
         <div class='calander'>
             <ul class="weeks">
+                <li>Sun</li>
                 <li>Mon</li>
                 <li>Tue</li>
-                <li>Wed</li>
+                <li>Wen</li>
                 <li>Thu</li>
                 <li>Fri</li>
                 <li>Sat</li>
-                <li>Sun</li>
             </ul>
-            <ul class="days">
-                <li class="inactive">28</li>
-                <li class="inactive">29</li>
-                <li class="inactive">30</li>
-                <li class="inactive">31</li>
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-                <li>4</li>
-                <li>5</li>
-                <li>6</li>
-                <li>7</li>
-                <li>8</li>
-                <li>9</li>
-                <li>10</li>
-                <li>11</li>
-                <li>12</li>
-                <li>13</li>
-                <li>14</li>
-                <li>15</li>
-                <li>16</li>
-                <li>17</li>
-                <li>18</li>
-                <li>19</li>
-                <li>20</li>
-                <li>21</li>
-                <li>22</li>
-                <li>23</li>
-                <li>24</li>
-                <li>25</li>
-                <li class="active">26</li>
-                <li>27</li>
-                <li>28</li>
-                <li>29</li>
-                <li>30</li>
-                <li class="inactive">1</li>
-            </ul>
+            <ul class="days"></ul>
         </div>
     </div>
     <footer>
