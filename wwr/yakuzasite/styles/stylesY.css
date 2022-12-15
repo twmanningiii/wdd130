@@ -300,17 +300,17 @@ footer p a:hover {
     margin-top: 30px;
     font-family: "Nanum Brush Script";
     color: black;
-    display: flex;
+    display:inline-flex;
     align-items: center;
     padding: 25px 30px 10px;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     width: 450px;
-    height: fit-content;
+    height: 450px;
     background-size: 450px;
     background-color: #7c3328;
     background-blend-mode: luminosity;
-    background-position: cover;
+    background-position: center;
     background-image: url('https://twmanningiii.github.io/wdd130/wwr/yakuzasite/images/savLight2.jpg');
     box-shadow: 0 0.5rem 3rem rgba(5, 5, 5, 0.4);
     border-radius: 10px;
@@ -318,28 +318,30 @@ footer p a:hover {
 }
 
 
-.current-date {
+.wrapper1 .current-date {
     font-size: 2.25rem;
     font-weight: 500;
+    text-align: top;
 
 }
 
-.icons span {
+.wrapper1 .icons span {
+    margin-top: 30px;
     height: 38px;
     width: 38px;
-    color: #3b523d;
+    color: #8a4d43;
     font-size: 2.5rem;
     margin: 0 1px;
     cursor: pointer;
-    text-align: center;
+    text-align: top;
     line-height: 38px;
     border-radius: 50%;
-    background: rgb(155, 194, 151);
+    background: #bb7e7e;
 
 }
 
 .icons span:hover {
-    background: rgb(182, 176, 176);
+    background: #7c3328;
 }
 
 .icons span:last-child {
