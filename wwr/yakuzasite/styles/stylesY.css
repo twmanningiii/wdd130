@@ -1,0 +1,693 @@
+/* if you are using any Google fonts change the font names below to your fonts. 
+Any spaces in your font name should be replaced with a +. 
+Fonts are separated by a | */
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&Noto+Sans&family=Roboto&family=Rock+Salt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
+
+:root {
+    /* change the values below to your colors from your palette */
+    --primary-color: #A30000;
+    --secondary-color: #390000;
+    --accent1-color: #6A31FD;
+    --accent2-color: #43085e;
+
+    /* change the values below to your chosen font(s) */
+    --heading-font: "Nanum Brush Script";
+    --paragraph-font: "Noto Sans", Helvetica, sans-serif;
+
+    /* these colors below should be chosen from among your palette colors above */
+    --headline-color-on-white: black;
+    /* headlines on a white background */
+    --headline-color-on-color: #A30000;
+    /* headlines on a colored background */
+    --paragraph-color-on-white: black;
+    /* paragraph text on a white background */
+    --paragraph-color-on-color: #A30000;
+    /* paragraph text on a colored background */
+    --paragraph-background-color: #390000;
+    --nav-link-color: white;
+    --nav-background-color: #43085e;
+    --nav-hover-link-color: black;
+    --nav-hover-background-color: #AA21EB;
+}
+
+
+/*  Look around below...but DON'T CHANGE ANYTHING! */
+
+body {
+    background-color: #312727;
+    height: 100%;
+    width: auto;
+    margin: 0;
+    padding: 4em;
+    font-size: 18px;
+    text-align: center;
+}
+
+.logo {
+    width: 200px;
+    padding-top: 5px;
+}
+
+.icon {
+    width: 200px;
+    padding-top: 10px;
+}
+
+#logo_link {
+    padding-top: 5px;
+    justify-self: center;
+    align-self: center;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+}
+
+nav {
+
+    background-color: #390000;
+    color: #ffffff;
+    line-height: 3em;
+    text-align: center;
+    font-size: 2.2em;
+    font-family: "Nanum Brush Script";
+    text-shadow: 0 .3rem .5rem rgba(0, 0, 0, 0.5);
+}
+
+nav {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+nav a {
+    padding: 1em;
+    min-width: 300px;
+    text-decoration: none;
+    padding: 10px;
+
+}
+
+nav a:link,
+nav a:visited {
+    color: var(--nav-link-color);
+}
+
+nav a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Nanum Brush Script";
+    color: var(--headline-color-on-white);
+}
+
+h1 {
+    font-size: 5rem;
+    font-weight: 400;
+    text-align: center;
+    grid-column: 1/4;
+    grid-row: 1;
+    color: #ffffff;
+    padding: 0;
+    text-shadow: 0 .3rem .5rem rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+    text-align: center;
+}
+
+hr {
+    height: 3px;
+    margin: 35px 0;
+    background: var(--accent1-color);
+}
+
+header {
+    padding: 1em;
+    text-align: center;
+    color: var(--paragraph-color-on-color);
+    background-color: var(--paragraph-background-color);
+}
+
+header>h1,
+header>h2 {
+    color: var(--headline-color-on-color);
+}
+
+p {
+    grid-column: 1/2;
+    grid-row: 2/4;
+    font-family: "Nanum Brush Script";
+    color: white;
+    margin-top: 0;
+    font-size: 2.5rem;
+    padding: 1em;
+    text-shadow: 0 .3rem .5rem rgba(0, 0, 0, 0.5);
+}
+
+.colors {
+    width: 100%;
+    min-width: 350px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.colors th {
+    background-color: #999;
+}
+
+.colors td {
+    width: 25%;
+    height: 3em;
+}
+
+.primary {
+    background-color: var(--primary-color);
+}
+
+.secondary {
+    background-color: var(--secondary-color);
+}
+
+.accent1 {
+    background-color: var(--accent1-color);
+}
+
+.accent2 {
+    background-color: var(--accent2-color);
+}
+
+p.colored {
+    background-color: var(--paragraph-background-color);
+    color: var(--paragraph-color-on-color);
+}
+
+.sitemap {
+    display: grid;
+    justify-content: center;
+
+    grid-template-columns: repeat(6, 15%);
+    grid-template-rows: 3em 1.5em 1.5em 3em;
+    grid-template-areas: ". . home home . ."
+        ". . . top . ."
+        ". left left right right ."
+        "page2 page2 . . page3 page3";
+}
+
+.sitemap>div {
+
+    text-align: center;
+
+}
+
+.sm-home {
+    grid-area: home;
+    background-color: #ccc;
+    line-height: 3em;
+}
+
+.sm-page2 {
+    grid-area: page2;
+    background-color: #ccc;
+    line-height: 3em;
+}
+
+.sm-page3 {
+    grid-area: page3;
+    background-color: #ccc;
+    line-height: 3em;
+}
+
+.top {
+    grid-area: top;
+    border-left: 1px solid;
+}
+
+.left {
+    grid-area: left;
+    border-top: 1px solid;
+    border-left: 1px solid;
+}
+
+.right {
+    grid-area: right;
+    border-top: 1px solid;
+    border-right: 1px solid;
+}
+
+.hero {
+
+    display: grid;
+    grid-template-columns: auto 10px auto;
+    grid-template-rows: 20% 40% 20%;
+    margin-top: 0;
+    grid-gap: 10px;
+    background-size: cover;
+    background-color: #43085e;
+    background-image: url(https://twmanningiii.github.io/wdd130/wwr/yakuzasite/images/bodyback2.jpg);
+}
+
+.home-grid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
+
+footer a {
+    color: #ffffff;
+}
+
+footer p a:hover {
+    color: #AA21EB;
+}
+
+footer {
+    background-color: #390000;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 0;
+    margin-top: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer p a:hover {
+    text-decoration: underline;
+}
+
+.social img {
+    padding-top: 15px;
+}
+
+
+.wrapper1 {
+    position: sticky;
+    top: 0;
+    grid-column: 3/4;
+    grid-row: 2/3;
+    margin-right: 40px;
+    margin-top: 30px;
+    font-family: "Nanum Brush Script";
+    color: black;
+    display: flex;
+    align-items: center;
+    padding: 25px 30px 10px;
+    justify-content: center;
+    align-items: center;
+    width: 450px;
+    height: fit-content;
+    background-size: 450px;
+    background-color: #7c3328;
+    background-blend-mode: luminosity;
+    background-position: cover;
+    background-image: url('https://twmanningiii.github.io/wdd130/wwr/yakuzasite/images/savLight2.jpg');
+    box-shadow: 0 0.5rem 3rem rgba(5, 5, 5, 0.4);
+    border-radius: 10px;
+
+}
+
+
+.current-date {
+    font-size: 2.25rem;
+    font-weight: 500;
+
+}
+
+.icons span {
+    height: 38px;
+    width: 38px;
+    color: #3b523d;
+    font-size: 2.5rem;
+    margin: 0 1px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 38px;
+    border-radius: 50%;
+    background: rgb(155, 194, 151);
+
+}
+
+.icons span:hover {
+    background: rgb(182, 176, 176);
+}
+
+.icons span:last-child {
+    margin-right: -10;
+
+}
+
+.calander {
+    padding: 20px;
+}
+
+.calander .days {
+    margin-bottom: 20px;
+}
+
+.calander .weeks li {
+    font-weight: 500;
+}
+
+.calander ul {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.calander ul li {
+    position: relative;
+    width: calc(100% / 7);
+}
+
+.calander .days li {
+    z-index: 1;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.days li.inactive {
+    color: #aaa;
+}
+
+.days li.active {
+    color: #390000;
+}
+
+.calander .days li::before {
+    position: absolute;
+    content: "";
+    height: 40px;
+    width: 40px;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.days li:hover::before {
+    background-image: url('https://twmanningiii.github.io/wdd130/wwr/yakuzasite/images/savLight2.jpg');
+}
+
+.days li.active::before {
+    background: #694e4e;
+
+}
+
+
+
+.calander>h1 {
+    margin-top: 30px;
+}
+
+.month {
+    width: auto;
+    height: 11rem;
+    background-color: #390000;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    text-align: center;
+    text-shadow: 0 .3rem .5rem rgba(0, 0, 0, 0.5);
+    border-radius: 10%;
+}
+
+.month i {
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+
+.month h1 {
+    font-size: 3rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    margin-bottom: 0rem;
+    text-shadow: 0 .5rem .7rem rgba(0, 0, 0, 0.5);
+}
+
+.month p {
+    font-size: 1.6rem;
+    text-shadow: 0 .5rem .7rem rgba(0, 0, 0, 0.5);
+}
+
+.weekdays {
+    width: 100%;
+    height: 5rem;
+    padding: 0 0.4rem;
+    display: flex;
+    align-items: center;
+}
+
+.weekdays div {
+    font-size: 1.7rem;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+    width: calc(44.2rem/7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 0 0.5rem 0.7rem rgba(0, 0, 0, 0.5);
+}
+
+.days {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0.2rem;
+}
+
+.days div {
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin: 0.3rem;
+    width: calc(40.4rem/7);
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 0 0.5rem 0.7rem rgba(0, 0, 0, 0.5);
+    transition: background-color 1000ms;
+}
+
+.days div:hover:not(.today) {
+    background-color: #694e4e;
+    border: 0.4rem solid #7c3328;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.prev-date,
+.next-date {
+    opacity: 0.5;
+}
+
+.today {
+    background-color: #390000;
+}
+
+
+.mainEvent {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    padding: 0;
+
+    /* Center and scale the image nicely */
+}
+
+.mainEvent>h1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    font-size: 5rem;
+    font-weight: 400;
+    text-align: center;
+    color: #ffffff;
+    padding: 0;
+    text-shadow: 0 .3rem .5rem rgba(0, 0, 0, 0.5);
+
+}
+
+.mainEvent>p {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    position: relative;
+    top: 0;
+    width: auto;
+    text-align: center;
+    margin-left: 0;
+    margin-right: 0;
+
+}
+
+.wrapper_outer {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.wrapper {
+    height: 100%;
+    width: auto;
+    overflow-x: hidden;
+    perspective: 1px;
+}
+
+.parallax_section {
+    min-height: 100vh;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    position: relative;
+    overflow: hidden;
+    transform-style: preserve-3d;
+    text-align: center;
+}
+
+.paraText {
+    position: relative;
+    top: 0;
+    width: auto;
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    grid-row: 1/2;
+}
+
+.pText {
+    position: relative;
+    top: 0;
+    width: auto;
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    z-index: -1;
+    grid-row: 1/2;
+}
+
+.parallax_bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    background-position: center center;
+    z-index: -1;
+    min-height: auto;
+    transform: translate3d(0, 0, -1px) scale(2);
+}
+
+.rules {
+    padding: 10px;
+    background-color: #AA21EB;
+    background-size: cover;
+    background-blend-mode: darken;
+    background-image: url("https://twmanningiii.github.io/wdd130/wwr/yakuzasite/images/pvp.png");
+}
+
+form {
+    /* Center the form on the page */
+    margin: 0px auto;
+    width: 400px;
+    /* Form outline */
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 1em;
+
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font: 25px Nanum Brush Script;
+}
+
+form li+li {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+label {
+    /* Uniform size & alignment */
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+}
+
+input,
+textarea {
+    /* To make sure that all text fields have the same font settings
+         By default, textareas have a monospace font */
+    font: 1em Nanum Brush Script;
+
+    /* Uniform text field size */
+    width: 300px;
+    box-sizing: border-box;
+
+    /* Match form field borders */
+    border: 1px solid #000;
+}
+
+input:focus,
+textarea:focus {
+    /* Additional highlight for focused elements */
+    border-color: white;
+    height: 1em;
+
+}
+
+textarea {
+    /* Align multiline text fields with their labels */
+    vertical-align: top;
+
+
+    /* Provide space to type some text */
+    height: 7em;
+}
+
+.button {
+    /* Align buttons with the text fields */
+    padding-left: 90px;
+    /* same size as the label elements */
+}
+
+button {
+    /* This extra margin represent roughly the same space as the space
+         between the labels and their text fields */
+    margin-left: 0.5em;
+    font: 1em Nanum Brush Script;
+}
+
+#feedback {
+    background-color: #6d6666;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: .5em;
+    font: 2em Nanum Brush Script;
+    /* make this element invisible until we are ready for it */
+    display: none;
+}
+
+.moveDown {
+    margin-top: 3em;
+}
